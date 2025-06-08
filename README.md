@@ -39,3 +39,7 @@ A high-performance portfolio website demonstrating modern web development skills
 | **Testing**     | Jest, React Testing Library           | Meta Jest Certification Path |
 
 ## 🚀 Production-Grade Setup
+
+
+website will be hosted with hostinger
+
