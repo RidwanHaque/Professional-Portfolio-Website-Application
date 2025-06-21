@@ -29,7 +29,7 @@ export default function RootLayout({
           
           
           {/*Creating two DIV elements to hold our page colors*/}
-          <div className="bg-[#eaf8d0] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]" ></div>
+          <div className="bg-[#9ff500] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]" ></div>
           <div> </div>
           
           {children}
