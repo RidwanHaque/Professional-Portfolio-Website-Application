@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 text-gray-950 relative`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 text-gray-950 relative h-[5000px]`}>
           
           
           {/*Creating two DIV elements to hold our page colors*/}
@@ -35,6 +36,8 @@ export default function RootLayout({
           {/*as the viewport gets smaller we need to change the position of the divs this can be done with breakpoints*/}
           {/*absolute positining and relative positining (add the relative class in the body and the elemnts will be positioned relative to the body*/}
           
+
+          <Header /> 
           {children}
       </body>
     </html>
