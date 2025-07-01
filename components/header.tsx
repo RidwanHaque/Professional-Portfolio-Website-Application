@@ -45,7 +45,7 @@ export default function Header() {
         // The x: "-50%" centers the header horizontally on the page so we removed the translate in the className
         //transform is framer motion's way of animating the position of the element
         initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
+        animate={{ y: 0, x: "-50%", opacity: 1  }}
       >
       </motion.div>
 
