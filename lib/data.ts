@@ -2,8 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import corpcommentImg from "@/public/NBA2.png";
+import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -62,24 +62,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "AI and ML-Powered NBA Game Analysis Using Computer Vision",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Developed a professional NBA basketball analytics system leveraging AI and ML techniques with computer vision for automated player and ball detection, tracking, and game event analysis. Utilized YOLO for real-time object detection, OpenCV for video processing, and Python for system integration and data handling.",
+    tags: ["Python", "OpenCV", "Deep Learning", "Pytorch", "Object Detection"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Retro Snake Game on ARM Mbed Microcontroller",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Developed a classic Snake game on an ARM Mbed microcontroller using C++ and embedded hardware prototyping. Integrated a micro-LCD display, capacitive touch controls, and audio output on a breadboarded system. Optimized game logic with efficient linked-list data structures for dynamic gameplay and implemented custom I/O interfacing for responsive user input and real-time feedback.",
+    tags: ["C++", "ARM Mbed OS", "Embedded Systems", "Data Structures", "Circuit Design"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Professional React and Tailwind CSS Web Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Built a modern, fully responsive developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with Framer Motion animations, dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel for live access. Emphasized accessibility, performance, and mobile-first design to showcase professional web development skills",
+    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
