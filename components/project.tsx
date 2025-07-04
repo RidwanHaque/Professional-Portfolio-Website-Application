@@ -4,7 +4,7 @@
 import { projectsData } from "@/lib/data";
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { motion,useScroll,useTransform } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 
 
 
@@ -55,7 +55,18 @@ const preview = description.length > 120 && !expanded
             ))}
           </ul>
           <p className="mt-2 leading-relaxed text-gray-700">
-            {preview}
+            <AnimatePresence initial={false}>
+              <motion.span
+                key={expanded ? "expanded" : "collapsed"}
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                style={{ display: "block", overflow: "hidden" }}
+              >
+                {expanded ? description : preview}
+              </motion.span>
+            </AnimatePresence>
             {description.length > 120 && (
               <button
                 className="ml-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-slate-200/60 hover:bg-slate-300/80 transition-all duration-200 text-slate-700 font-medium shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-slate-400"

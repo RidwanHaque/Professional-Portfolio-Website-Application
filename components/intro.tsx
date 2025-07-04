@@ -9,13 +9,34 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { useActiveSectionContext } from '@/context/active-section-context';
+
 
 export default function Intro() {
+  const { ref , inView } = useInView({
+    threshold: 0.5, // Trigger when 10% of the section is visible
+    //triggerOnce: true, // Only trigger once when it comes into view
+  });
+  const {setActiveSection} = useActiveSectionContext();
+
+
+  useEffect(() => {
+  if (inView) {
+    setActiveSection("Home");
+  }
+}, [inView, setActiveSection]);
+
+
+
+
+
   return (
     //we use section instead of div because it is more semantic for the content we are displaying
     //section is used to group related content together
     //we are going to have another div that will hold image of person
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
         <div className="flex items-center justify-center">
             <div className="relative">
                 {/* motion componenet is using react hooks and this is a server component */}

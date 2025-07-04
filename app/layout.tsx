@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}>
           
@@ -36,9 +37,12 @@ export default function RootLayout({
           {/*as the viewport gets smaller we need to change the position of the divs this can be done with breakpoints*/}
           {/*absolute positining and relative positining (add the relative class in the body and the elemnts will be positioned relative to the body*/}
           
-
+          <ActiveSectionContextProvider>
           <Header /> 
           {children}
+          </ActiveSectionContextProvider>
+          
+          {/* Footer can be added here if needed */}
       </body>
     </html>
   );

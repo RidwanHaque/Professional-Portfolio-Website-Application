@@ -2,16 +2,41 @@
 
 
 import SectionHeading from './section-heading'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
+
+
+
 
 export default function About() {
+  const { ref , inView } = useInView({
+    threshold: 0.75, // Adjust this value to control when the section is considered in view
+    //triggerOnce: true, // Optional: if you want the animation to trigger only once
+  });
+  const {setActiveSection} = useActiveSectionContext();
+
+
+  useEffect(() => {
+  if (inView) {
+    setActiveSection("About");
+  }
+}, [inView, setActiveSection]);
+
+
+
+
+
+
+
   return (
 
-    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    <motion.section ref = {ref} className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "tween", duration: 0.5, delay: 0.2 }}
+      id="about"
       >
         {/*Every section needs to get added to the page file we can use Section Heading for each section as a shortcut*/} 
         <SectionHeading>About Me</SectionHeading>

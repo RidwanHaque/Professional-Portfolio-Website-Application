@@ -27,12 +27,17 @@ import Link from "next/link";
 // 2. Import the links array from your data file
 // This array contains the navigation items you want to display in your header.
 import { links } from "@/lib/data";
+import clsx from "clsx";
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 
 
 
 // Rename function to "Header" (PascalCase)
 export default function Header() {
+  const { activeSection, setActiveSection } = useActiveSectionContext(); // Use the context to access active section state
+
+
   return (
     <header className="z-[999] relative">
 
@@ -63,12 +68,30 @@ export default function Header() {
           {
             links.map(link=>(
               //gives li elements a height of 3/4 of the nav bar
-              <motion.li className="h-3/4 flex items-center justify-center px-3 py-3 hover:text-gray-950 transition"  key={link.hash} 
+              <motion.li className="h-3/4 flex items-center justify-center px-3 py-3 hover:text-gray-950 transition relative"  key={link.hash} 
               // Framer Motion animation for each link
               initial={{ opacity: 0, y: -100 }} // Start slightly below and invisible
               animate={{ opacity: 1, y: 0 }} // Animate to visible and original position
               >
-                <Link href={link.hash}>{link.name}</Link>
+                <Link className={clsx("flex w-full  hover:text-gray-950 transition",
+            {
+              "text-gray-950": activeSection === link.name,
+            }
+          )} href={link.hash}
+            onClick={() => setActiveSection(link.name)}
+            >
+            {link.name}
+
+          {
+            link.name === activeSection && 
+            (<motion.span className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+            layoutId="activeSelection"
+            transition={{ type: "spring", stiffness: 380, damping: 30 }}
+            
+            ></motion.span>)
+          }
+          
+          </Link>
               </motion.li>
             ))
           }
