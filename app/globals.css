@@ -3,4 +3,5 @@
 /* Prevent horizontal scroll */
 html, body {
   overflow-x: hidden;
+  --line-color: #e5e7eb
 }

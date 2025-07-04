@@ -34,29 +34,50 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+    {
+    title: "Machine Learning and Biomechanics Researcher",
+    company: "Georgia Tech | Institute for Robotics and Intelligent Machines", // <-- Add this line
+    location: "Atlanta, GA",
+    description:
+      "Worked on building scalable web applications and APIs using Node.js and React.",
+    icon: React.createElement(FaReact),
+    date: "Spring 2025",
+  },
+    {
+    title: "Project Manager",
+    company: "Georgia Tech Office of Commercialization",
+    location: "Atlanta, Ga",
+    description:
+      "Work",
+    icon: React.createElement(FaReact),
+    date: "Fall 2025",
+  },
+    {
+    title: "Product Designer",
+    company: "Nitriam Design",
+    location: "Orlando, FL",
+    description:
+      "Worked",
+    icon: React.createElement(FaReact),
+    date: "Summer 2024",
+  },
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Computational Astrophysics Researcher",
+    company: "UGA CURO Research Program",
+    location: "Athens, GA",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023 - 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Administrative Assistant",
+    company: "UGA Office of Undergraduate Admissions",
+    location: "Athens, GA",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - 2024",
   },
 ] as const;
 
