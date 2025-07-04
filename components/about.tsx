@@ -2,27 +2,15 @@
 
 
 import SectionHeading from './section-heading'
-import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
+
+import { useSectionInView } from '@/lib/hooks';
 
 
 
 
 export default function About() {
-  const { ref , inView } = useInView({
-    threshold: 0.75, // Adjust this value to control when the section is considered in view
-    //triggerOnce: true, // Optional: if you want the animation to trigger only once
-  });
-  const {setActiveSection} = useActiveSectionContext();
-
-
-  useEffect(() => {
-  if (inView) {
-    setActiveSection("About");
-  }
-}, [inView, setActiveSection]);
+  const { ref} = useSectionInView('About');
 
 
 

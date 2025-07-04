@@ -35,7 +35,7 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 
 // Rename function to "Header" (PascalCase)
 export default function Header() {
-  const { activeSection, setActiveSection } = useActiveSectionContext(); // Use the context to access active section state
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext(); // Use the context to access active section state
 
 
   return (
@@ -78,7 +78,10 @@ export default function Header() {
               "text-gray-950": activeSection === link.name,
             }
           )} href={link.hash}
-            onClick={() => setActiveSection(link.name)}
+            onClick={() => {
+              setActiveSection(link.name)
+              setTimeOfLastClick(Date.now());
+            }}
             >
             {link.name}
 
