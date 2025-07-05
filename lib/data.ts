@@ -41,7 +41,7 @@ export const experiencesData = [
     description:
       "Worked on building scalable web applications and APIs using Node.js and React.",
     icon: React.createElement(FaReact),
-    date: "Spring 2025",
+    date: "Jan 2025",
   },
     {
     title: "Project Manager",
@@ -50,7 +50,7 @@ export const experiencesData = [
     description:
       "Work",
     icon: React.createElement(FaReact),
-    date: "Fall 2025",
+    date: "Aug 2025",
   },
     {
     title: "Product Designer",
@@ -59,7 +59,7 @@ export const experiencesData = [
     description:
       "Worked",
     icon: React.createElement(FaReact),
-    date: "Summer 2024",
+    date: "June 2024 - Jan 2025",
   },
   {
     title: "Computational Astrophysics Researcher",
@@ -68,7 +68,7 @@ export const experiencesData = [
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023 - 2024",
+    date: "Aug 2023 - May 2024",
   },
   {
     title: "Administrative Assistant",
@@ -77,7 +77,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - 2024",
+    date: "Aug 2023 - May 2024",
   },
 ] as const;
 
@@ -100,7 +100,7 @@ export const projectsData = [
     title: "Professional React and Tailwind CSS Web Portfolio",
     description:
       "Built a modern, fully responsive developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with Framer Motion animations, dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel for live access. Emphasized accessibility, performance, and mobile-first design to showcase professional web development skills",
-    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API", "React Hooks"],
+    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Resend API", "React Hooks"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
