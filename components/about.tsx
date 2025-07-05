@@ -45,7 +45,7 @@ export default function About() {
           <span className="font-medium">full-time position</span> as a software developer.
         </p>
         <p>
-          <span className="italic">When I'm not coding</span>, I channel my curiosity into hands-on projects. My interest in music inspired me to build a smart piano tutor, and I am currently building a{" "}
+          <span className="italic">When I&apos;m not coding</span>, I channel my curiosity into hands-on projects. My interest in music inspired me to build a smart piano tutor, and I am currently building a{" "}
           <span className="font-medium">cybersecurity homelab</span> to deepen my knowledge of network security. I also enjoy{" "}
           <span className="font-medium">learning new things</span>, from the fundamentals of{" "}
           <span className="font-medium">electronics</span> to playing video games and watching movies.

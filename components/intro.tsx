@@ -5,7 +5,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+//import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
@@ -53,7 +53,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         //transition={{ type: "tween", duration: 0.5, delay: 0.2 }}
         >
-            <span className="font-bold">Hello, I'm Ridwan.</span> I'm a{" "}
+            <span className="font-bold">Hello, I&apos;m Ridwan.</span> I&apos;m a{" "}
             <span className="font-bold">Computer Engineering Student</span> studying at 
             <span className="font-bold"> The Georgia Institute of Technology</span> with{" "}
             <span className="font-bold">4 years</span> of experience. I enjoy
