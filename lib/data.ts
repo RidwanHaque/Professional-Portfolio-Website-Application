@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/NBA2.png";
 import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/portweb.png";
+import airtrafficImg from "@/public/airtraffic.png"; 
+import pcbImg from "@/public/pcb.png"; 
+
+
 
 export const links = [
   {
@@ -39,17 +43,17 @@ export const experiencesData = [
     company: "Georgia Tech | Institute for Robotics and Intelligent Machines", // <-- Add this line
     location: "Atlanta, GA",
     description:
-      "Worked on building scalable web applications and APIs using Node.js and React.",
+      "Upgraded PCB architecture and power delivery via precision circuit routing, optimizing signal integrity for hip-exoskeleton. Configured 7 IMUs for sensor ablation experiments on an engineered hip exoskeleton to analyze balance augmentation on humans. Engineered a hierarchical data structure, 4 data visualization MATLAB functions, and a GUI for TCN machine learning model training, organizing and analyzing biomechanical data from 24 CAREN pilots across variable platform perturbation conditions",
     icon: React.createElement(FaReact),
     date: "Jan 2025",
   },
     {
     title: "Project Manager",
     company: "Georgia Tech Office of Commercialization",
-    location: "Atlanta, Ga",
+    location: "Atlanta, GA",
     description:
-      "Work",
-    icon: React.createElement(FaReact),
+      "Optimized database systems with Airtable by designing a custom GUI, enabling employees to efficiently view and manage their assigned tasks, track deadlines, and collaborate, resulting in a 60% increase in task completion rates. Programmed JavaScript automations for the department's hiring tracking processes, enabling application tracking, record organization, and a GUI for aggregating applicant form fields to generate 8 data metrics for departmental insights. Delivered technical AV support for 5 conference presentations and trained 10 employees on Airtable database implementation ",
+    icon: React.createElement(CgWorkAlt),
     date: "Aug 2025",
   },
     {
@@ -57,7 +61,7 @@ export const experiencesData = [
     company: "Nitriam Design",
     location: "Orlando, FL",
     description:
-      "Worked",
+      "Managing contract projects for the manufacturing startup, including client meetings to discuss project timelines and budgeting. Designed 10 vehicles and an RC Aircraft for 3D printing and rendering high-quality product visualizations for brands",
     icon: React.createElement(FaReact),
     date: "June 2024 - Jan 2025",
   },
@@ -66,19 +70,19 @@ export const experiencesData = [
     company: "UGA CURO Research Program",
     location: "Athens, GA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Programmed an interactive UI with Python, optimizing user control and navigation by 50%. Integrated 10 NASA Visualization Tech Apps & Development resources and utilized observational research data for scripting. Configured Git LFS with GitHub to track over 30 file versions, and share large simulation files remotely",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2023 - May 2024",
   },
-  {
-    title: "Administrative Assistant",
-    company: "UGA Office of Undergraduate Admissions",
-    location: "Athens, GA",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Aug 2023 - May 2024",
-  },
+  // {
+  //   title: "Administrative Assistant",
+  //   company: "UGA Office of Undergraduate Admissions",
+  //   location: "Athens, GA",
+  //   description:
+  //     "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: "Aug 2023 - May 2024",
+  // },
 ] as const;
 
 export const projectsData = [
@@ -103,6 +107,20 @@ export const projectsData = [
     tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Resend API", "React Hooks" , "Vercel"],
     imageUrl: wordanalyticsImg,
   },
+  {
+    title: "Hip Exoskeleton and Sensor Suit Interface PCB",
+    description:
+      "Designed and fabricated a custom PCB using EasyEDA for integration with the Vicon motion capture system, CAREN Motek platform, and Nvidia Jetson unit. The board is mounted on a hip exoskeleton and sensor suits for machine learning data collection in robotic human augmentation research. The PCB features precision power delivery, multiple sensor and actuator connectors, and robust signal routing to support real-time biomechanical data acquisition and control.",
+    tags: ["EasyEDA", "PCB Design", "Embedded Systems", "Nvidia Jetson", "Machine Learning"],
+    imageUrl: pcbImg,
+  },
+  {
+    title: "Air Traffic Control LED Peripheral Visualization System",
+    description:
+      "Co-developed an embedded LED interface using memory-mapped registers on a DE10 board, enabling real-time control of 10 LEDs via a 16-bit protocol to simulate airway status (open/closed) and speed limits (20%-80% brightness). Collaborated in a 4-member team to design hardware-software integration, contributing to pattern generation logic and demo code for an air traffic control API.",
+    tags: ["Intel Quartus Prime", "SCOMP Assembly", "VHDL", "Embedded Systems", "FPGA"],
+    imageUrl: airtrafficImg,
+  },
 ] as const;
 
 export const skillsData = [
@@ -115,14 +133,39 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
+  "Framer Motion",
+  "C",
   "C++",
+  "Java",
+  "Python",
+  "MATLAB",
+  "VHDL",
+  "Verilog",
+  "RISC-V Assembly",
+  "Linux",
+  "Ubuntu/WSL",
+  "Raspbian",
+  "Mbed OS",
+  "ARM mbed",
+  "ESP32",
+  "Arduino IDE",
+  "FPGAs",
+  "Raspberry Pi",
+  "Oscilloscope",
+  "Logic Analyzer",
+  "Multimeter",
+  "Intel Quartus Prime",
+  "ModelSim",
+  "LabVIEW",
+  "Autodesk Inventor",
+  "Fusion 360",
+  "EasyEDA",
+  "Blender",
+  "Airtable",
+  "Jupyter Notebooks",
   "OpenCV",
   "Docker",
-  "GCP",
+  "Google Cloud Platform",
   "AWS",
   "Azure",
-  "Verilog",
-  "Python",
-  "Assembly",
-  "Framer Motion",
 ] as const;

@@ -31,24 +31,19 @@ export default function About() {
         {/*two paragraphs  */}
         
         <p className="mb-3">
-          My passion for technology has driven me to build projects across diverse fields like{" "}
-          <span className="font-medium">AI/ML, full-stack web development, cybersecurity, and embedded systems</span>.{" "}
-          <span className="italic">My favorite part of programming</span> is the
-          problem-solving aspect, especially when tackling complex challenges like building an{" "}
-          <span className="font-medium">AI-powered basketball analytics tool</span> or an{" "}
-          <span className="font-medium">LED-guided piano learning system</span>. My core technical skills are in{" "}
-          <span className="font-medium">
-            Python, TypeScript, React, Next.js, and Node.js
-          </span>. I have extensive experience with cloud platforms like{" "}
-          <span className="font-medium">AWS and Azure</span> and technologies such as{" "}
-          <span className="font-medium">TensorFlow, Three.js, and Docker</span>. I am currently seeking a{" "}
-          <span className="font-medium">full-time position</span> as a software developer.
+          My passion for technology has led me to build projects across{" "}
+          <span className="font-medium">embedded systems, hardware-software co-design, automation, and web development</span>. 
+          I am especially interested in <span className="font-medium">aerospace engineering</span> and <span className="font-medium">national security initiatives</span>. 
+          My current research in <span className="font-medium">Robotic Human Augmentation at Georgia Tech</span> has deepened my understanding of biomedical innovation and the importance of access to healthcare, while my experience at <span className="font-medium">UGA's CURO Research Program</span> allowed me to explore astrophysics and computational research under the guidance of Dr. Nandana Weliweriya and Professor Inseok Song. while attending UGA I was awarded a $1000 CURO Research Reward had the oppurtunity to present at the Spring 2024 CURO Research Symposium.
+          <br /><br />
+          I am currently seeking an <span className="font-medium">internship or co-op</span> as a <span className="font-medium">Cloud Computing and Infrastructure Security Engineer, Embedded Systems and Computing Hardware Engineer, or Software Engineer</span>.
         </p>
         <p>
-          <span className="italic">When I&apos;m not coding</span>, I channel my curiosity into hands-on projects. My interest in music inspired me to build a smart piano tutor, and I am currently building a{" "}
-          <span className="font-medium">cybersecurity homelab</span> to deepen my knowledge of network security. I also enjoy{" "}
-          <span className="font-medium">learning new things</span>, from the fundamentals of{" "}
-          <span className="font-medium">electronics</span> to playing video games and watching movies.
+          My interest in aerospace inspired me to build an{" "}
+          <span className="font-medium">API for an air traffic control system interfaced with an FPGA on a DE10 development board</span>. I am currently building a{" "}
+          <span className="font-medium">cybersecurity homelab</span> to deepen my knowledge of network security. Outside of engineering, I enjoy{" "}
+          <span className="font-medium">digital music production in FL Studio</span> and{" "}
+          <span className="font-medium">optimizing 3D rendering workflows in Blender</span>.
         </p>
     </motion.section>
   )

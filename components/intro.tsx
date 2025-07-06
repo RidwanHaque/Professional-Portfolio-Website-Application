@@ -56,9 +56,7 @@ export default function Intro() {
             <span className="font-bold">Hello, I&apos;m Ridwan.</span> I&apos;m a{" "}
             <span className="font-bold">Computer Engineering Student</span> studying at 
             <span className="font-bold"> The Georgia Institute of Technology</span> with{" "}
-            <span className="font-bold">4 years</span> of experience. I enjoy
-            building <span className="italic">sites & apps</span>. My focus is{" "}
-            <span className="underline">React (Next.js)</span>.
+            <span className="font-bold">4 years</span> of experience. My focus is <span className="font-bold">Computing Hardware and Emerging Architectures</span> and <span className="font-bold">Distributed Systems and Software Design</span>. My ambition is to deepen my expertise in chip design, GPU architecture, integrating AI and ML into my workflows, and building secure cyber-physical and embedded systems.
 
             
         </motion.h1>
@@ -84,7 +82,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv.pdf"
+          href="/Ridwan_Haque_Resume.pdf"
           download
         >
           Download CV
