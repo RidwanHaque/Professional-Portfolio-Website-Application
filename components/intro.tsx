@@ -56,7 +56,7 @@ export default function Intro() {
             <span className="font-bold">Hello, I&apos;m Ridwan.</span> I&apos;m a{" "}
             <span className="font-bold">Computer Engineering Student</span> studying at 
             <span className="font-bold"> The Georgia Institute of Technology</span> with{" "}
-            <span className="font-bold">4 years</span> of experience. My focus is <span className="font-bold">Computing Hardware and Emerging Architectures</span> and <span className="font-bold">Distributed Systems and Software Design</span>. My ambition is to deepen my expertise in chip design, GPU architecture, integrating AI and ML into my workflows, and building secure cyber-physical and embedded systems.
+            <span className="font-bold">4 years</span> of experience. My focus is <span className="font-bold">Computing Hardware and Emerging Architectures</span> and <span className="font-bold">Distributed Systems and Software Design</span>. 
 
             
         </motion.h1>
