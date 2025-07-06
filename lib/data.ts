@@ -45,7 +45,7 @@ export const experiencesData = [
     description:
       "Upgraded PCB architecture and power delivery via precision circuit routing, optimizing signal integrity for hip-exoskeleton. Configured 7 IMUs for sensor ablation experiments on an engineered hip exoskeleton to analyze balance augmentation on humans. Engineered a hierarchical data structure, 4 data visualization MATLAB functions, and a GUI for TCN machine learning model training, organizing and analyzing biomechanical data from 24 CAREN pilots across variable platform perturbation conditions",
     icon: React.createElement(FaReact),
-    date: "Jan 2025",
+    date: "Jan 2025 - Current",
   },
     {
     title: "Project Manager",
@@ -54,7 +54,7 @@ export const experiencesData = [
     description:
       "Optimized database systems with Airtable by designing a custom GUI, enabling employees to efficiently view and manage their assigned tasks, track deadlines, and collaborate, resulting in a 60% increase in task completion rates. Programmed JavaScript automations for the department's hiring tracking processes, enabling application tracking, record organization, and a GUI for aggregating applicant form fields to generate 8 data metrics for departmental insights. Delivered technical AV support for 5 conference presentations and trained 10 employees on Airtable database implementation ",
     icon: React.createElement(CgWorkAlt),
-    date: "Aug 2025",
+    date: "Aug 2024 - Current",
   },
     {
     title: "Product Designer",
