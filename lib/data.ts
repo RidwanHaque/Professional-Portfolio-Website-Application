@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/portweb.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
 import pcbImg from "@/public/pcb.png"; 
+import piano from "@/public/piano.jpg";
 
 
 
@@ -120,6 +121,13 @@ export const projectsData = [
       "Co-developed an embedded LED interface using memory-mapped registers on a DE10 board, enabling real-time control of 10 LEDs via a 16-bit protocol to simulate airway status (open/closed) and speed limits (20%-80% brightness). Collaborated in a 4-member team to design hardware-software integration, contributing to pattern generation logic and demo code for an air traffic control API.",
     tags: ["Intel Quartus Prime", "SCOMP Assembly", "VHDL", "Embedded Systems", "FPGA"],
     imageUrl: airtrafficImg,
+  },
+    {
+    title: "Embedded Esp32 Powered Piano LED Tutor Integration/API",
+    description:
+      "Developed an interactive piano learning system to visually guide users through songs with a custom-built LED strip placed above the piano keys. Engineered the hardware solution using an ESP32 microcontroller on a breadboard, carefully integrating components like a 330-ohm resistor and a capacitor to ensure stable power delivery to the LEDs. Programmed the device in C++ within the Arduino IDE, leveraging the FastLED library to control individual LEDs and create dynamic lighting effects. The system features a user-editable API designed to translate digital music notes into corresponding light-up keys, allowing for easy learning of new songs. This project involved detailed power delivery research to safely implement a 4-amp, 5-volt external power source and sophisticated MIDI signal processing to synchronize the lights with the music.",
+    tags: ["Esp32", "C++", "Circuit Design", "Hardware/Software Integration",  "Object-Oriented Programming", "MIDI signal processing", "Arduino IDE"],
+    imageUrl: piano,
   },
 ] as const;
 
