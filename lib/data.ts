@@ -7,7 +7,7 @@ import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/portweb.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
 import pcbImg from "@/public/pcb.png"; 
-import piano from "@/public/piano.jpg";
+import piano from "@/public/piano2.jpg";
 
 
 
@@ -123,10 +123,10 @@ export const projectsData = [
     imageUrl: airtrafficImg,
   },
     {
-    title: "Embedded Esp32 Powered Piano LED Tutor Integration/API",
+    title: "Arduino-Powered Piano LED Visualizer/Learning System API",
     description:
-      "Developed an interactive piano learning system to visually guide users through songs with a custom-built LED strip placed above the piano keys. Engineered the hardware solution using an ESP32 microcontroller on a breadboard, carefully integrating components like a 330-ohm resistor and a capacitor to ensure stable power delivery to the LEDs. Programmed the device in C++ within the Arduino IDE, leveraging the FastLED library to control individual LEDs and create dynamic lighting effects. The system features a user-editable API designed to translate digital music notes into corresponding light-up keys, allowing for easy learning of new songs. This project involved detailed power delivery research to safely implement a 4-amp, 5-volt external power source and sophisticated MIDI signal processing to synchronize the lights with the music.",
-    tags: ["Esp32", "C++", "Circuit Design", "Hardware/Software Integration",  "Object-Oriented Programming", "MIDI signal processing", "Arduino IDE"],
+      "Engineered an embedded system that translates live MIDI data from a digital piano into a real-time, velocity-sensitive light show on a WS2812B addressable LED strip. The system's hardware core is an Arduino Uno, which processes serial data captured via the Hairless MIDI Serial Bridge. The circuit design incorporates a 330-ohm resistor for data line signal integrity and a parallel 100 microfarad capacitor to stabilize the 5V/4A external power supply, ensuring reliable hardware performance. The firmware, written in C++ in the Arduino IDE, is designed as a configurable API. The modular script allows for easy implementation for various MIDI enabled keyboards and LED strips, and also functions as a piano tutor. This enables users to program new songs for guided learning simply by defining the melody and rhythm within the code, creating a (follow the lights) experience",
+    tags: ["Arduino", "Esp32", "C++", "API Design", "Circuit Design", "Hardware/Software Integration", "MIDI signal processing", "Embedded Systems"],
     imageUrl: piano,
   },
 ] as const;
