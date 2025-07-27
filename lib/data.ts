@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/NBA2.png";
+import corpcommentImg from "@/public/NBA3.png";
 import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/portweb.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
