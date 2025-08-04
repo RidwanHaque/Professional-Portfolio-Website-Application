@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/NBA3.png";
 import rmtdevImg from "@/public/snake.png";
-import wordanalyticsImg from "@/public/portweb.png";
+import wordanalyticsImg from "@/public/portweb3.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
 import pcbImg from "@/public/pcb.png"; 
 import piano from "@/public/piano2.jpg";
@@ -91,7 +91,7 @@ export const projectsData = [
     title: "AI and ML-Powered NBA Game Analysis Using Computer Vision",
     description:
       "Developed a professional NBA basketball analytics system leveraging AI and ML techniques with computer vision for automated player and ball detection, tracking, and game event analysis. Utilized YOLO for real-time object detection, OpenCV for video processing, and Python for system integration and data handling.",
-    tags: ["Python", "OpenCV", "Deep Learning", "Pytorch", "Object Detection", "Jupyter Notebooks", "Lightning AI", "Roboflow API"],
+    tags: ["Python", "OpenCV", "Deep Learning", "Machine Learning", "Pytorch", "Object Detection", "Jupyter Notebooks", "Lightning AI", "Roboflow API"],
     imageUrl: corpcommentImg,
   },
   {
@@ -102,25 +102,25 @@ export const projectsData = [
     imageUrl: rmtdevImg,
   },
   {
-    title: "Professional React and Tailwind CSS Web Portfolio",
+    title: "Arduino-Powered Piano LED Visualizer/Learning System API",
     description:
-      "Built a modern, fully responsive developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with Framer Motion animations, dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel for live access. Emphasized accessibility, performance, and mobile-first design to showcase professional web development skills",
-    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Resend API", "React Hooks" , "Vercel"],
-    imageUrl: wordanalyticsImg,
+      "Engineered an embedded system that translates live MIDI data from a digital piano into a real-time, velocity-sensitive light show on a WS2812B addressable LED strip. The system's hardware core is an Arduino Uno, which processes serial data captured via the Hairless MIDI Serial Bridge. The circuit design incorporates a 330-ohm resistor for data line signal integrity and a parallel 100 microfarad capacitor to stabilize the 5V/4A external power supply, ensuring reliable hardware performance. The firmware, written in C++ in the Arduino IDE, is designed as a configurable API. The modular script allows for easy implementation for various MIDI enabled keyboards and LED strips, and also functions as a piano tutor. This enables users to program new songs for guided learning simply by defining the melody and rhythm within the code, creating a (follow the lights) experience",
+    tags: ["Arduino", "Esp32", "C++", "API Design", "Hardware/Software Integration", "Circuit Design", "MIDI signal processing", "Embedded Systems"],
+    imageUrl: piano,
   },
   {
     title: "Hip Exoskeleton and Sensor Suit Interface PCB",
     description:
       "Designed and fabricated a custom PCB using EasyEDA for integration with the Vicon motion capture system, CAREN Motek platform, and Nvidia Jetson unit. The board is mounted on a hip exoskeleton and sensor suits for machine learning data collection in robotic human augmentation research. The PCB features precision power delivery, multiple sensor and actuator connectors, and robust signal routing to support real-time biomechanical data acquisition and control.",
-    tags: ["EasyEDA", "PCB Design", "Embedded Systems", "Nvidia Jetson", "Machine Learning"],
+    tags: ["EasyEDA", "PCB Design", "Nvidia Jetson", "Machine Learning", "Embedded Systems",],
     imageUrl: pcbImg,
   },
   {
-    title: "Arduino-Powered Piano LED Visualizer/Learning System API",
+    title: "Professional React and Tailwind CSS Web Portfolio",
     description:
-      "Engineered an embedded system that translates live MIDI data from a digital piano into a real-time, velocity-sensitive light show on a WS2812B addressable LED strip. The system's hardware core is an Arduino Uno, which processes serial data captured via the Hairless MIDI Serial Bridge. The circuit design incorporates a 330-ohm resistor for data line signal integrity and a parallel 100 microfarad capacitor to stabilize the 5V/4A external power supply, ensuring reliable hardware performance. The firmware, written in C++ in the Arduino IDE, is designed as a configurable API. The modular script allows for easy implementation for various MIDI enabled keyboards and LED strips, and also functions as a piano tutor. This enables users to program new songs for guided learning simply by defining the melody and rhythm within the code, creating a (follow the lights) experience",
-    tags: ["Arduino", "Esp32", "C++", "API Design", "Circuit Design", "Hardware/Software Integration", "MIDI signal processing", "Embedded Systems"],
-    imageUrl: piano,
+      "Built a modern, fully responsive developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with Framer Motion animations, dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel for live access. Emphasized accessibility, performance, and mobile-first design to showcase professional web development skills",
+    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Resend API", "React Hooks" , "Vercel"],
+    imageUrl: wordanalyticsImg,
   },
   {
     title: "Air Traffic Control LED Peripheral Visualization System",
