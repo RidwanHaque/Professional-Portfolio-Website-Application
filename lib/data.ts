@@ -8,6 +8,7 @@ import wordanalyticsImg from "@/public/portweb3.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
 import pcbImg from "@/public/pcb.png"; 
 import piano from "@/public/piano2.jpg";
+import cyber from "@/public/cyber4.png";
 
 
 
@@ -109,6 +110,13 @@ export const projectsData = [
     imageUrl: piano,
   },
   {
+    title: "Cloud-Based Cyber-Threat Defense SOC + Honeynet on Azure",
+    description:
+      "This project engineered a real-time SOC and honeynet environment in Microsoft Azure to demonstrate cloud-based threat defense. Multiple Windows and Linux virtual machines, along with an SQL Database, were deployed within a secured Virtual Network and monitored via an Azure Log Analytics Workspace and Azure Key Vault. Logs from all resources—including Security Events, Syslog, and network activity—were ingested and analyzed in Microsoft Sentinel (SIEM) for automated detection of malicious activity, alerting, and incident response. Security metrics were collected before and after applying advanced security controls, resulting in reduction in threats, security incidents, and malicious flows post-hardening. The solution leveraged KQL queries for metric tracking, validating the effectiveness of layered defense with Azure-native tools.",
+    tags: ["Azure", "Cloud Security", "SIEM", "KQL", "SQL Database", "Honeynet", "SOC"],
+    imageUrl: cyber,
+  },
+  {
     title: "Hip Exoskeleton and Sensor Suit Interface PCB",
     description:
       "Designed and fabricated a custom PCB using EasyEDA for integration with the Vicon motion capture system, CAREN Motek platform, and Nvidia Jetson unit. The board is mounted on a hip exoskeleton and sensor suits for machine learning data collection in robotic human augmentation research. The PCB features precision power delivery, multiple sensor and actuator connectors, and robust signal routing to support real-time biomechanical data acquisition and control.",
@@ -146,6 +154,8 @@ export const skillsData = [
   "C++",
   "Java",
   "Python",
+  "KQL",
+  "SQL",
   "MATLAB",
   "VHDL",
   "Verilog",
