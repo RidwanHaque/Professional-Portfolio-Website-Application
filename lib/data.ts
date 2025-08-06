@@ -161,7 +161,7 @@ export const skillsData = [
   "Verilog",
   "RISC-V Assembly",
   "Linux",
-  "Ubuntu/WSL",
+  "Ubuntu",
   "Raspbian",
   "Mbed OS",
   "ARM mbed",
