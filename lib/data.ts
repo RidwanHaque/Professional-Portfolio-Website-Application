@@ -6,7 +6,7 @@ import corpcommentImg from "@/public/NBA4.png";
 import rmtdevImg from "@/public/snake.png";
 import wordanalyticsImg from "@/public/portweb3.png";
 import airtrafficImg from "@/public/airtraffic.png"; 
-import pcbImg from "@/public/pcb.png"; 
+import pcbImg from "@/public/pcb5.png"; 
 import piano from "@/public/piano2.jpg";
 import cyber from "@/public/cyber4.png";
 
@@ -117,9 +117,9 @@ export const projectsData = [
     imageUrl: cyber,
   },
   {
-    title: "Hip Exoskeleton and Sensor Suit Interface PCB",
+    title: "Power/Data Hub PCB for Biomedical Exo Suit and Machine Learning",
     description:
-      "Designed and fabricated a custom PCB using EasyEDA for integration with the Vicon motion capture system, CAREN Motek platform, and Nvidia Jetson unit. The board is mounted on a hip exoskeleton and sensor suits for machine learning data collection in robotic human augmentation research. The PCB features precision power delivery, multiple sensor and actuator connectors, and robust signal routing to support real-time biomechanical data acquisition and control.",
+      "Designed a PCB for integration with the Vicon motion capture system, CAREN Motek platform, and Nvidia Jetson, mounted on a hip exoskeleton and sensor suits for machine learning-based data collection in robotic human augmentation research. The board provides precision power delivery with dual battery inputs, emergency-stop, and a buck converter for isolated Jetson supply; it incorporates robust signal routing, CAN transceiver-based motor network outputs, and multiple dedicated connectors for sensors and actuators, enabling reliable real-time biomechanical data acquisition and control.",
     tags: ["EasyEDA", "PCB Design", "Nvidia Jetson", "Machine Learning", "Embedded Systems",],
     imageUrl: pcbImg,
   },
