@@ -91,14 +91,14 @@ export const projectsData = [
   {
     title: "AI and ML-Powered NBA Game Analysis Using Computer Vision",
     description:
-      "Developed a professional NBA basketball analytics system leveraging AI and ML techniques with computer vision for automated player and ball detection, tracking, and game event analysis. Utilized YOLO for real-time object detection, OpenCV for video processing, and Python for system integration and data handling.",
+      "Developed a professional NBA basketball analytics system leveraging AI and ML with computer vision for automated player and ball detection, multi-object tracking, and game event analysis. Built a PyTorch and ML based pipeline utilizing YOLO for real-time object detection, OpenCV for video processing, a zero-shot classifier for team affiliation, and court keypoint detection to generate tactical top-down views and calculate 4 real-world metrics such as speed, distance, passes, and steals. Integrated the system with Python for seamless data handling and analysis.",
     tags: ["Python", "OpenCV", "Deep Learning", "Machine Learning", "Pytorch", "Object Detection", "Jupyter Notebooks", "Lightning AI", "Roboflow API"],
     imageUrl: corpcommentImg,
   },
   {
     title: "Retro Snake Game on ARM Mbed Microcontroller",
     description:
-      "Developed a classic Snake game on an ARM Mbed microcontroller using C++ and embedded hardware prototyping. Integrated a micro-LCD display, capacitive touch controls, and audio output on a breadboarded system. Optimized game logic with efficient linked-list data structures for dynamic gameplay and implemented custom I/O interfacing for responsive user input and real-time feedback.",
+      "Developed a classic Snake game on an ARM Mbed microcontroller using C++ and embedded hardware prototyping. Integrated a micro-LCD display, 10 capacitive touch controls, and audio output on a breadboarded system. Optimized game logic with efficient linked-list data structures for dynamic gameplay and implemented custom I/O interfacing for responsive user input and real-time feedback.",
     tags: ["C++", "ARM Mbed OS", "Embedded Systems", "Data Structures", "Circuit Design"],
     imageUrl: rmtdevImg,
   },
@@ -112,7 +112,7 @@ export const projectsData = [
   {
     title: "Cloud-Based Cyber-Threat Defense SOC + Honeynet on Azure",
     description:
-      "This project engineered a real-time SOC and honeynet environment in Microsoft Azure to demonstrate cloud-based threat defense. Multiple Windows and Linux virtual machines, along with an SQL Database, were deployed within a secured Virtual Network and monitored via an Azure Log Analytics Workspace and Azure Key Vault. Logs from all resources—including Security Events, Syslog, and network activity—were ingested and analyzed in Microsoft Sentinel (SIEM) for automated detection of malicious activity, alerting, and incident response. Security metrics were collected before and after applying advanced security controls, resulting in reduction in threats, security incidents, and malicious flows post-hardening. The solution leveraged KQL queries for metric tracking, validating the effectiveness of layered defense with Azure-native tools.",
+      "This project engineered a real-time SOC and honeynet environment in Microsoft Azure to demonstrate cloud-based threat defense. 2 Windows and 1 Linux virtual machines, along with an SQL Database, were deployed within a secured Virtual Network and monitored via an Azure Log Analytics Workspace and Azure Key Vault. Logs from all resources—including Security Events, Syslog, and network activity—were ingested and analyzed in Microsoft Sentinel (SIEM) for automated detection of malicious activity, alerting, and incident response. Security metrics were collected before and after applying advanced security controls, resulting in reduction in threats, security incidents, and malicious flows post-hardening. The solution leveraged KQL queries for metric tracking, validating the effectiveness of layered defense with Azure-native tools.",
     tags: ["Azure", "Cloud Security", "SIEM", "KQL", "SQL Database", "Honeynet", "SOC", "Cybersecurity"],
     imageUrl: cyber,
   },
@@ -124,10 +124,10 @@ export const projectsData = [
     imageUrl: pcbImg,
   },
   {
-    title: "Professional React and Tailwind CSS Web Portfolio",
+    title: "Dynamic Frontend Developer Portfolio with React and Tailwind CSS",
     description:
-      "Built a modern, fully responsive developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with Framer Motion animations, dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel for live access. Emphasized accessibility, performance, and mobile-first design to showcase professional web development skills",
-    tags: ["React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Resend API", "React Hooks" , "Vercel"],
+      "Built a modern and responsive frontend developer portfolio website using Next.js 13, React, TypeScript, and Tailwind CSS. Implemented advanced UI/UX with 30 Framer Motion animations, System preference enabled dark/light mode, and dynamic state management via React Context API. Integrated a functional contact form using React Email and Resend, and deployed the site to Vercel with firewall-enabled security. Emphasized accessibility, performance, and mobile-first design.",
+    tags: ["Frontend Development", "React", "Next.js","Node.js", "TypeScript", "Tailwind", "Framer", "Context API","Security", "React Hooks" , "Vercel"],
     imageUrl: wordanalyticsImg,
   },
   {
