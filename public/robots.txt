@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ridwanhaque.vercel.app
+
+# Sitemaps
+Sitemap: https://ridwanhaque.vercel.app/sitemap.xml
