@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+interface Project {
+  title: string;
+  [key: string]: unknown;
+}
+
 export default function ProjectsApiDemo() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
     fetch("/api/projects")
@@ -15,7 +20,7 @@ export default function ProjectsApiDemo() {
     <div>
       <h2>Projects from API:</h2>
       <ul>
-        {projects.map((project: any, idx) => (
+        {projects.map((project: Project, idx) => (
           <li key={idx}>{project.title}</li>
         ))}
       </ul>
