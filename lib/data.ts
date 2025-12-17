@@ -9,7 +9,7 @@ import airtrafficImg from "@/public/airtraffic.png";
 import pcbImg from "@/public/pcb5.png"; 
 import piano from "@/public/piano2.jpg";
 import cyber from "@/public/cyber4.png";
-import bmo from "@/public/BMOImage.jpg";
+import bmo from "@/public/BMO.png";
 
 
 export const links = [
@@ -41,20 +41,20 @@ export const links = [
 
 export const experiencesData = [
     {
-    title: "Machine Learning and Biomechanics Researcher",
+    title: "Biomedical Hardware Researcher",
     company: "Georgia Tech | Institute for Robotics and Intelligent Machines", // <-- Add this line
     location: "Atlanta, GA",
     description:
-      "Upgraded PCB architecture and power delivery via precision circuit routing, optimizing signal integrity for hip-exoskeleton. Configured 7 IMUs for sensor ablation experiments on an engineered hip exoskeleton to analyze balance augmentation on humans. Engineered a hierarchical data structure, 4 data visualization MATLAB functions, and a GUI for TCN machine learning model training, organizing and analyzing biomechanical data from 24 CAREN pilots across variable platform perturbation conditions",
+      "Designed and upgraded PCB architecture and power delivery for AK80 motors, emergency switch, and Nvidia Jetson Nano, optimizing CAN bus signal processing integrity for the hip exoskeleton by 60%. Innovated PCB design with a remote emergency stop protocol by integrating Jetson-controlled MOSFET gating for software-driven motor power cutoff, and soldered 20 backup cables to ensure system redundancy and reliability. Optimized 7-IMU exoskeleton data processing using Python, reducing sensor count by 40% with only a 2% loss in accuracy. Developed a procedural data architecture and four custom MATLAB visualization algorithms for real-time biomechanical machine learning training and performance analysis across 24 pilot trial datasets.",
     icon: React.createElement(FaReact),
     date: "Jan 2025 - Current",
   },
     {
-    title: "Project Manager",
+    title: "Information Technology Project Manager",
     company: "Georgia Tech Office of Commercialization",
     location: "Atlanta, GA",
     description:
-      "Optimized database systems with Airtable by designing a custom GUI, enabling employees to efficiently view and manage their assigned tasks, track deadlines, and collaborate, resulting in a 60% increase in task completion rates. Programmed JavaScript automations for the department's hiring tracking processes, enabling application tracking, record organization, and a GUI for aggregating applicant form fields to generate 8 data metrics for departmental insights. Delivered technical AV support for 5 conference presentations and trained 10 employees on Airtable database implementation ",
+      "Optimized Airtable databases by designing a custom GUI that enabled 12 employees to efficiently view and manage their assigned tasks, track deadlines, and collaborate, resulting in a 67% increase in task completion rates. Programmed JavaScript automations for hiring processes to enable application tracking, record organization, and a GUI for aggregating applicant form fields to generate eight data metrics for departmental insights. Deployed a scalable event database for four departments, enforced secure access controls, trained 10 employees on error-handling interfaces, and configured AI-powered alerts, improving coordination efficiency by 80%.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2024 - Current",
   },
@@ -68,11 +68,11 @@ export const experiencesData = [
     date: "June 2024 - Jan 2025",
   },
   {
-    title: "Computational Astrophysics Researcher",
-    company: "UGA CURO Research Program",
+    title: "Astrophysics Software Researcher",
+    company: "University of Georgia Department of Physics & Astronomy",
     location: "Athens, GA",
     description:
-      "Programmed an interactive UI with Python, optimizing user control and navigation by 50%. Integrated 10 NASA Visualization Tech Apps & Development resources and utilized observational research data for scripting. Configured Git LFS with GitHub to track over 30 file versions, and share large simulation files remotely",
+      "Developed a 3D solar system simulation in Blender by integrating 10 NASA VTAD assets and automating 20 motion paths through Python scripting for predictive eclipse visualization on Meta Quest VR. Engineered an interactive Python GUI that enhanced user navigation and control by 58%. Utilized Git version control to manage over 30 simulation files, improving collaborative development. Awarded a $1,000 CURO Research Grant and presented the simulation at the 2024 CURO Research Symposium.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2023 - May 2024",
   },
@@ -92,7 +92,7 @@ export const projectsData = [
     title: "Full-Stack Embedded AI BMO Companion",
     description:
       "Designed and programmed an ESP32‑C6–based BMO Tamagotchi companion in C/C++ with a 4D Systems uLCD, 5‑way nav switch, common‑anode RGB LED, piezo speaker (LEDC PWM), MEMS mic, and ESP‑NOW IMU accessory, implementing non‑blocking state machines for UI, game loop, and virtual stat management (happiness/energy) in real time. Implemented low‑power system design on ESP32‑C6 using light/deep sleep, RTC with NTP sync, and wake‑on‑input, extending projected battery life by ~3–4× while maintaining responsive UI, wireless events, and periodic stat decay updates. Developed a full‑stack chat backend and web client (Node.js/Express, React/TypeScript, PostgreSQL, Prisma, Socket.IO) where both the browser UI and ESP32 hardware share a unified BMO persona, REST/voice API surface, and persistent conversation history.​ Built an ESP32 → WiFi → /api/voice/input pipeline streaming PCM audio to a containerized Node.js service using OpenAI Whisper + GPT, centralizing AI behavior, prompt logic, and multi‑client coordination while the microcontroller handles low‑level transport, sensors, display, and local game logic. Containerized frontend, backend, and PostgreSQL with Docker Compose and environment‑based config, enabling one‑command spin‑up for teammates/demos and reducing setup time from hours to under 5 minutes.​ Modeled the BMO enclosure and internal mounting features in SolidWorks and iterated a 3D‑printed chassis to integrate PCB, uLCD, nav switch, RGB LED, and battery pack, validating clearances, thermals, and cable routing for a manufacturable embedded form factor.",
-    tags: ["Full‑stack TypeScript (Node.js/Express, React)", "ESP32‑C6 embedded systems", "Edge AI voice pipeline", "Docker Compose microservices", "SolidWorks", "Low‑power firmware / RTC", "PostgreSQL / Prisma ORM", "Real‑time state machines (UI/game loop)", "Wireless sensor networks (ESP‑NOW)"],
+    tags: ["Full‑stack", "ESP32‑C6 embedded systems", "Edge AI voice pipeline", "Docker Compose microservices", "SolidWorks", "Low‑power firmware / RTC", "PostgreSQL / Prisma ORM", "Real‑time state machines (UI/game loop)", "Wireless sensor networks (ESP‑NOW)", "TypeScript/Node.js/Express/React", "OpenAI Whisper + GPT-4"],
     imageUrl: bmo,
   },
   {

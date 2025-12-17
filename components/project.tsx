@@ -41,8 +41,8 @@ const preview = description.length > 120 && !expanded
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-indigo-100/60 dark:bg-white/10 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative hover:bg-indigo-200/50 dark:hover:bg-white/20 sm:group-even:pl-30 dark:text-white">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className="bg-indigo-100/60 dark:bg-white/10 max-w-[75rem] border border-black/5 rounded-lg overflow-hidden p-5 sm:p-10 grid sm:grid-cols-[minmax(0,1.35fr)_minmax(0,0.85fr)] gap-6 sm:gap-8 items-start sm:justify-between hover:bg-indigo-200/50 dark:hover:bg-white/20 dark:text-white">
+        <div className="flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <ul className="flex flex-wrap mt-4 gap-2">
             {tags.map((tag, index) => (
@@ -89,21 +89,14 @@ const preview = description.length > 120 && !expanded
             )}
           </p>
         </div>
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-20 w-[28.25rem] rounded-t-lg shadow-2xl drop-shadow-2xl
-            transition
-            group-hover:scale-[1.04]
-            group-hover:-translate-x-3
-            group-hover:translate-y-3
-            group-hover:-rotate-2
-            group-even:group-hover:translate-x-3
-            group-even:group-hover:translate-y-3
-            group-even:group-hover:rotate-2
-            group-even:right-[initial] group-even:-left-20"
-        />
+        <div className="hidden sm:flex justify-end items-start self-start h-full">
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="w-full max-w-[28rem] rounded-lg shadow-2xl drop-shadow-2xl transition group-hover:scale-[1.03] group-hover:translate-y-2"
+          />
+        </div>
       </section>
     </motion.div>
   );
