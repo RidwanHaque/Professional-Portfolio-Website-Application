@@ -72,7 +72,7 @@ export const experiencesData = [
     company: "University of Georgia Department of Physics & Astronomy",
     location: "Athens, GA",
     description:
-      "Developed a 3D solar system simulation in Blender by integrating 10 NASA VTAD assets and automating 20 motion paths through Python scripting for predictive eclipse visualization on Meta Quest VR. Engineered an interactive Python GUI that enhanced user navigation and control by 58%. Utilized Git version control to manage over 30 simulation files, improving collaborative development. Awarded a $1,000 CURO Research Grant and presented the simulation at the 2024 CURO Research Symposium.",
+      "Developed a 3D solar system simulation in Blender by integrating 10 NASA Visualization Technology Applications and Development assets and automating 20 motion paths through Python scripting for predictive eclipse visualization on Meta Quest VR. Engineered an interactive Python GUI that enhanced user navigation and control by 58%. Utilized Git version control to manage over 30 simulation files, improving collaborative development. Awarded a $1,000 CURO Research Grant and presented the simulation at the 2024 CURO Research Symposium.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2023 - May 2024",
   },
