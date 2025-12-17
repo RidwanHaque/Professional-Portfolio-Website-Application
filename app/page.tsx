@@ -6,6 +6,9 @@ import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 
+
+import ProjectsApiDemo from "@/components/ProjectsApiDemo";
+
 export default function Home() {
   return <main className="flex flex-col items-center px-4">
     <Intro />
@@ -13,6 +16,8 @@ export default function Home() {
     <About />
 
     <Projects />
+    <ProjectsApiDemo />
+    <AddProjectDemo />
     <Skills />
     <Experience />
     <Contact />

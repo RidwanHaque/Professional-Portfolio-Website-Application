@@ -9,7 +9,7 @@ import airtrafficImg from "@/public/airtraffic.png";
 import pcbImg from "@/public/pcb5.png"; 
 import piano from "@/public/piano2.jpg";
 import cyber from "@/public/cyber4.png";
-
+import bmo from "@/public/BMOImage.jpg";
 
 
 export const links = [
@@ -88,6 +88,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Full-Stack Embedded AI BMO Companion",
+    description:
+      "Designed and programmed an ESP32‑C6–based BMO Tamagotchi companion in C/C++ with a 4D Systems uLCD, 5‑way nav switch, common‑anode RGB LED, piezo speaker (LEDC PWM), MEMS mic, and ESP‑NOW IMU accessory, implementing non‑blocking state machines for UI, game loop, and virtual stat management (happiness/energy) in real time. Implemented low‑power system design on ESP32‑C6 using light/deep sleep, RTC with NTP sync, and wake‑on‑input, extending projected battery life by ~3–4× while maintaining responsive UI, wireless events, and periodic stat decay updates. Developed a full‑stack chat backend and web client (Node.js/Express, React/TypeScript, PostgreSQL, Prisma, Socket.IO) where both the browser UI and ESP32 hardware share a unified BMO persona, REST/voice API surface, and persistent conversation history.​ Built an ESP32 → WiFi → /api/voice/input pipeline streaming PCM audio to a containerized Node.js service using OpenAI Whisper + GPT, centralizing AI behavior, prompt logic, and multi‑client coordination while the microcontroller handles low‑level transport, sensors, display, and local game logic. Containerized frontend, backend, and PostgreSQL with Docker Compose and environment‑based config, enabling one‑command spin‑up for teammates/demos and reducing setup time from hours to under 5 minutes.​ Modeled the BMO enclosure and internal mounting features in SolidWorks and iterated a 3D‑printed chassis to integrate PCB, uLCD, nav switch, RGB LED, and battery pack, validating clearances, thermals, and cable routing for a manufacturable embedded form factor.",
+    tags: ["Full‑stack TypeScript (Node.js/Express, React)", "ESP32‑C6 embedded systems", "Edge AI voice pipeline", "Docker Compose microservices", "SolidWorks", "Low‑power firmware / RTC", "PostgreSQL / Prisma ORM", "Real‑time state machines (UI/game loop)", "Wireless sensor networks (ESP‑NOW)"],
+    imageUrl: bmo,
+  },
   {
     title: "AI and ML-Powered NBA Game Analysis Using Computer Vision",
     description:
