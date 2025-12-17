@@ -11,14 +11,20 @@ import ProjectsApiDemo from "@/components/ProjectsApiDemo";
 import AddProjectDemo from "@/components/AddProjectsDemo";
 
 export default function Home() {
+  const showApiDemos = process.env.NEXT_PUBLIC_SHOW_API_DEMOS === "true";
+
   return <main className="flex flex-col items-center px-4">
     <Intro />
     <SectionDivider />
     <About />
 
     <Projects />
-    <ProjectsApiDemo />
-    <AddProjectDemo />
+    {showApiDemos && (
+      <>
+        <ProjectsApiDemo />
+        <AddProjectDemo />
+      </>
+    )}
     <Skills />
     <Experience />
     <Contact />
