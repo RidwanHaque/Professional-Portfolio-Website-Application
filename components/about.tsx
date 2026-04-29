@@ -22,7 +22,7 @@ export default function About() {
 
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 text-[color:var(--muted)]"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "tween", duration: 0.5, delay: 0.2 }}
@@ -40,7 +40,7 @@ export default function About() {
         <span className="font-medium">optimizing 3D rendering workflows in Blender</span>.
       </p>
 
-      <h3 className="text-xl font-semibold mb-2">Career Goals</h3>
+      <h3 className="text-xl font-semibold mb-2 font-display text-[color:var(--text)]">Career Goals</h3>
       <p className="mb-3">
         I am especially interested in <span className="font-medium">aerospace engineering</span> and <span className="font-medium">national security initiatives</span>.
       </p>

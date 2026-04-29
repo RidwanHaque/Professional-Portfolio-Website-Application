@@ -5,6 +5,7 @@ import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Activities from "@/components/activities";
 
 
 import ProjectsApiDemo from "@/components/ProjectsApiDemo";
@@ -27,6 +28,7 @@ export default function Home() {
     )}
     <Skills />
     <Experience />
+    <Activities />
     <Contact />
     
 

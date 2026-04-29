@@ -20,102 +20,126 @@ export default function Intro() {
 
 
   return (
-    //we use section instead of div because it is more semantic for the content we are displaying
-    //section is used to group related content together
-    //we are going to have another div that will hold image of person
-    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
-        <div className="flex items-center justify-center">
-            <div className="relative">
-                {/* motion componenet is using react hooks and this is a server component */}
-                <motion.div
-                    initial ={{ opacity: 0, scale:0 }}
-                    animate ={{ opacity: 1, scale:1 }}
-                    transition ={{ type: "tween", duration: 0.2, }}
-                    >
-                    <Image
-                        src="/Ridwan-Haque.png"
-                        alt="Ridwan Portrait"
-                        width={192}
-                        height={192}
-                        quality={95}
-                        priority={true}
-                        className="h-60 w-60 rounded-full object cover border-[0.35rem] border-white shadow-x1"
-                        />
-
-                </motion.div>
-
-            </div>
-
-
-        </div>
-        <motion.h1 className="mb-10 mt-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        //transition={{ type: "tween", duration: 0.5, delay: 0.2 }}
-        >
-            <span className="font-bold">Hello, I&apos;m Ridwan.</span> I&apos;m a{" "}
-            <span className="font-bold">Computer Engineering Student</span> studying at 
-            <span className="font-bold"> The Georgia Institute of Technology</span> with{" "}
-            <span className="font-bold">4 years</span> of experience. My focus is <span className="font-bold">Computing Hardware and Emerging Architectures</span> and <span className="font-bold">Distributed Systems and Software Design</span>. 
-
-            
-        </motion.h1>
+    <section
+      ref={ref}
+      id="home"
+      className="mb-24 w-full max-w-[72rem] scroll-mt-28"
+    >
+      <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium mt-4"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
-        <a
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition "
-          onClick={() =>{
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
+          className="hero-card chip-panel rounded-3xl px-6 py-8 sm:px-10 sm:py-10 text-center lg:text-left"
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", duration: 0.5 }}
         >
-          Contact me here
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </a>
-
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/RidwanHaque_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download CV
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-
-        <a
-          className="bg-[#0077b5] p-4 text-white flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:bg-[#005983] active:scale-105 transition cursor-pointer borderBlack"
-          href="https://www.linkedin.com/in/ridwanhaque0942/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-[#181717] p-4 text-white flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:bg-black active:scale-105 transition cursor-pointer borderBlack"
-          href="https://github.com/ridwanhaque"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-      </motion.div>
-        <motion.p
-            className="mt-6 text-sm text-gray-500 dark:text-gray-400"
-            initial={{ opacity: 0, y: 100 }}
+          <p className="hero-eyebrow">Silicon systems + embedded intelligence</p>
+          <motion.h1
+            className="hero-title font-display mt-4 text-3xl sm:text-4xl lg:text-5xl leading-tight"
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "tween", duration: 0.5, delay: 0.4 }}
+            transition={{ type: "tween", duration: 0.6, delay: 0.1 }}
+          >
+            Hello, I&apos;m Ridwan. I design chip-aware systems, real-time
+            software, and experimental platforms that fuse hardware with AI.
+          </motion.h1>
+          <p className="mt-4 text-base sm:text-lg text-[color:var(--muted)]">
+            Computer Engineering student at Georgia Tech with 4 years of
+            experience spanning chip design, embedded systems, distributed
+            software, and data-driven tooling.
+          </p>
+
+          <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-2 text-xs sm:text-sm">
+            {[
+              "Physical design",
+              "Embedded systems",
+              "Distributed software",
+              "AI pipelines",
+            ].map((label) => (
+              <span key={label} className="chip-pill rounded-full px-3 py-1">
+                {label}
+              </span>
+            ))}
+          </div>
+
+          <motion.div
+            className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 text-base font-medium"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <a
+              href="#contact"
+              className="group btn-primary px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+              onClick={() =>{
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              Contact me
+              <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+            </a>
+
+            <a
+              className="group btn-secondary px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+              href="/RidwanHaque_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            </a>
+
+            <a
+              className="icon-btn p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer"
+              href="https://www.linkedin.com/in/ridwanhaque0942/"
+              target="_blank"
+            >
+              <BsLinkedin />
+            </a>
+
+            <a
+              className="icon-btn p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer"
+              href="https://github.com/ridwanhaque"
+              target="_blank"
+            >
+              <FaGithubSquare />
+            </a>
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="relative mx-auto w-full max-w-[22rem] sm:max-w-[26rem]"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "tween", duration: 0.6, delay: 0.15 }}
         >
-            I’m currently working on a few projects and looking for new
-            opportunities. Feel free to reach out if you have any questions
-            or just want to connect!
-        </motion.p>
+          <div className="hero-orbit hero-orbit--outer"></div>
+          <div className="hero-orbit hero-orbit--inner"></div>
+          <div className="hero-chip hero-chip--a"></div>
+          <div className="hero-chip hero-chip--b"></div>
+          <div className="relative z-10 rounded-[2.5rem] border border-[color:var(--line)] bg-[color:var(--surface)] p-4 glow-ring">
+            <Image
+              src="/Ridwan%20V2.png"
+              alt="Ridwan Portrait"
+              width={520}
+              height={640}
+              quality={95}
+              priority={true}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </motion.div>
+      </div>
+
+      <motion.p
+        className="mt-10 text-center text-sm text-[color:var(--muted)]"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "tween", duration: 0.5, delay: 0.35 }}
+      >
+        Currently building new projects and open to research and internship
+        opportunities. Reach out anytime.
+      </motion.p>
     </section>
   )
 }

@@ -9,48 +9,45 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
 
 export default function Experience() {
-    const { ref} = useSectionInView("Experience", 0.3);
-    const { theme } = useTheme();
+    const { ref} = useSectionInView("Experience", 0.15);
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="var(--line)">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-                contentStyle={{
-                background: theme === 'light' ? "#fff": "rgba(255,255,255, 0.05)",
-                boxShadow: theme === 'light'
-    ? "0 4px 24px rgba(0,0,0,0.08)"
-    : "0 4px 24px rgba(0,0,0,0.12)",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+              contentStyle={{
+                background: "var(--surface)",
+                boxShadow: "var(--panel-shadow)",
+                border: "1px solid var(--line)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
                 borderRadius: "0.75rem",
               }}
               contentArrowStyle={{
-                borderRight: theme === "light"
-                    ? "0.4rem solid #9ca3af"
-                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                borderRight: "0.4rem solid var(--line)",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                background: "var(--surface-2)",
+                color: "var(--accent)",
+                border: "1px solid var(--line)",
+                boxShadow: "0 0 18px var(--glow)",
                 fontSize: "1.5rem",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="italic text-sm">{item.company}
+              <p className="italic text-sm text-[color:var(--muted)]">{item.company}
 
               </p>
 
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{item.description}</p>
+              <p className="font-normal !mt-0 text-[color:var(--muted)]">{item.location}</p>
+              <p className="!mt-1 !font-normal text-[color:var(--muted)]">{item.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

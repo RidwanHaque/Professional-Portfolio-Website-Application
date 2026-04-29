@@ -29,15 +29,15 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
+    <header className="fixed top-0 left-0 w-full z-[99999] pointer-events-none">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 z-[99998] h-auto w-full rounded-none glass-panel px-2 py-3 sm:top-6 sm:h-[3.25rem] sm:w-[min(90vw,44rem)] sm:rounded-full sm:px-0 sm:py-0 pointer-events-none"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>
 
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      <nav className="fixed top-0 left-1/2 z-[99999] flex h-auto w-full -translate-x-1/2 items-center justify-center py-3 sm:top-6 sm:h-[3.25rem] sm:w-[min(90vw,44rem)] sm:py-0 pointer-events-auto">
+        <ul className="flex w-full max-w-[26rem] flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[0.85rem] font-medium text-[color:var(--muted)] sm:max-w-none sm:flex-nowrap sm:gap-4 sm:text-[0.85rem]">
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
@@ -47,10 +47,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-3 py-2 transition text-[color:var(--muted)] hover:text-[color:var(--text)]",
                   {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
+                    "text-[color:var(--text)]": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -63,7 +62,7 @@ export default function Header() {
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    className="bg-[color:var(--surface-2)] border border-[color:var(--line)] rounded-full absolute inset-0 -z-10 shadow-[0_0_16px_var(--glow)]"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",

@@ -41,20 +41,20 @@ const preview = description.length > 120 && !expanded
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-indigo-100/60 dark:bg-white/10 max-w-[75rem] border border-black/5 rounded-lg overflow-hidden p-5 sm:p-10 grid sm:grid-cols-[minmax(0,1.35fr)_minmax(0,0.85fr)] gap-6 sm:gap-8 items-start sm:justify-between hover:bg-indigo-200/50 dark:hover:bg-white/20 dark:text-white">
+      <section className="chip-panel max-w-[75rem] rounded-2xl overflow-hidden p-5 sm:p-10 grid sm:grid-cols-[minmax(0,1.35fr)_minmax(0,0.85fr)] gap-6 sm:gap-8 items-start sm:justify-between transition hover:shadow-[0_0_50px_var(--glow)]">
         <div className="flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <ul className="flex flex-wrap mt-4 gap-2">
             {tags.map((tag, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                className="tag-chip px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full"
                 key={index}
               >
                 {tag}
               </li>
             ))}
           </ul>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed text-[color:var(--muted)]">
             <AnimatePresence initial={false}>
               <motion.span
                 key={expanded ? "expanded" : "collapsed"}
@@ -69,7 +69,7 @@ const preview = description.length > 120 && !expanded
             </AnimatePresence>
             {description.length > 120 && (
               <button
-                className="ml-2 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-slate-200/60 hover:bg-slate-300/80 transition-all duration-200 text-slate-700 font-medium shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-slate-400"
+                className="ml-2 inline-flex items-center gap-1 px-3 py-1 rounded-full btn-secondary text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[color:var(--accent)]"
                 onClick={() => setExpanded((v) => !v)}
                 aria-expanded={expanded}
               >
@@ -94,7 +94,7 @@ const preview = description.length > 120 && !expanded
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
-            className="w-full max-w-[28rem] rounded-lg shadow-2xl drop-shadow-2xl transition group-hover:scale-[1.03] group-hover:translate-y-2"
+            className="w-full max-w-[28rem] rounded-xl border border-[color:var(--line)] glow-ring transition group-hover:scale-[1.03] group-hover:translate-y-2"
           />
         </div>
       </section>

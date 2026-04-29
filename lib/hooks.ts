@@ -9,7 +9,7 @@ import type { SectionName } from '@/lib/types';
 // };
 
 
-export function useSectionInView(sectionName: SectionName, threshold = 0.75 ) {
+export function useSectionInView(sectionName: SectionName, threshold = 0.2) {
   const { ref , inView } = useInView({
     threshold,
     //triggerOnce: true, // Only trigger once when it comes into view
