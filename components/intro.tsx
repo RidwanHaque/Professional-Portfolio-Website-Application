@@ -34,7 +34,10 @@ export default function Intro() {
         >
           <p className="hero-eyebrow">Silicon systems + embedded intelligence</p>
           <motion.h1
-            className="hero-title font-display mt-4 text-2xl sm:text-3xl lg:text-4xl leading-tight"
+            className="hero-title font-display mt-4 text-2xl sm:text-3xl lg:text-4xl leading-tight font-bold"
+            style={{
+              textShadow: "0 0 30px rgba(139, 92, 246, 0.4), 0 0 60px rgba(236, 72, 153, 0.2)"
+            }}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.1 }}
@@ -140,6 +143,35 @@ export default function Intro() {
         Currently building new projects and open to research and internship
         opportunities. Reach out anytime.
       </motion.p>
+
+      <motion.div
+        className="mt-12 flex justify-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "tween", duration: 0.5, delay: 0.45 }}
+      >
+        <motion.div
+          animate={{ y: [0, -18, 0] }}
+          transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
+          className="will-change-transform"
+        >
+          <motion.div
+            whileHover={{ scale: 1.28 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 900, damping: 20, mass: 0.45 }}
+            className="will-change-transform"
+          >
+            <Image
+              src="/twistient.png"
+              alt="Twistient"
+              width={320}
+              height={320}
+              quality={95}
+              className="w-80 h-80 object-contain"
+            />
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
