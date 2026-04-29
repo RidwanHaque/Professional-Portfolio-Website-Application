@@ -18,6 +18,7 @@ import ugaAstroResearchImg from "@/public/uga astro research.jpg";
 import vlsiProjectImg from "@/public/updated vlsi project.png";
 import epicLabImg from "@/public/Epic Lab.jpg";
 import onboardingProjectImg from "@/public/onboarding project.png";
+import demodayImg from "@/public/demoday.png";
 
 
 export const links = [
@@ -207,12 +208,21 @@ export const activitiesData = [
   },
   {
     title: "Integrated Circuit Fabrication Cleanroom Laboratory Team",
-    organization: "Georgia Tech",
+    organization: "3D Systems Packaging Research Center - Georgia Tech",
     date: "2026",
     description:
       "Cleanroom lab team focused on CMOS process execution, mask alignment, and device characterization. Highlights team collaboration, lab safety, and instrumentation workflows.",
     tags: ["Cleanroom", "IC fabrication", "Lab team", "Device characterization"],
     imageUrl: icFabTeamV2Img,
+  },
+  {
+    title: "Create X Demo Day 2025",
+    organization: "Georgia Tech | Office of Commercialization",
+    date: "2025",
+    description:
+      "Supported Create X Demo Day 2025, a premier showcase event celebrating Georgia Tech's most innovative startups and entrepreneurial ventures. Contributed to event logistics and operations on behalf of GT's Office of Commercialization, helping facilitate keynote presentations, startup pitches, investor networking sessions, and demo competitions. The event highlighted cutting-edge student-led ventures spanning AI, hardware, biotech, and software, fostering connections between innovators and the venture ecosystem.",
+    tags: ["Entrepreneurship", "Event Management", "Startups", "Innovation"],
+    imageUrl: demodayImg,
   },
   {
     title: "CURO Research Award & Symposium Spring 2024 - Simulations for Astronomy Education",
