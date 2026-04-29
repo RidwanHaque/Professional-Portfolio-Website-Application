@@ -98,7 +98,8 @@ body.app-shell::after {
   animation: scanSweep 16s ease-in-out infinite;
 }
 
-body.app-shell > * {
+/* Keep content stacking context, but exclude the header so the nav can float above everything */
+body.app-shell > *:not(header) {
   position: relative;
   z-index: 1;
 }

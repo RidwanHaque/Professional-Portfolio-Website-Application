@@ -197,7 +197,7 @@ export const activitiesData = [
     imageUrl: hackathonTeamImg,
   },
   {
-    title: "EPIC Lab - Human Balance Augmentation Team",
+    title: "Exoskeleton and Prosthetic Intelligent Controls (EPIC) Lab - Human Balance Augmentation Team",
     organization: "Georgia Tech | EPIC Lab",
     date: "2025",
     description:
@@ -206,7 +206,7 @@ export const activitiesData = [
     imageUrl: epicLabImg,
   },
   {
-    title: "ECE 4452 Integrated Circuit Fabrication Cleanroom Laboratory Team",
+    title: "Integrated Circuit Fabrication Cleanroom Laboratory Team",
     organization: "Georgia Tech",
     date: "2026",
     description:
@@ -215,7 +215,7 @@ export const activitiesData = [
     imageUrl: icFabTeamV2Img,
   },
   {
-    title: "CURO Research Symposium Spring 2024 - CURO Research Award",
+    title: "CURO Research Award & Symposium Spring 2024 - Simulations for Astronomy Education",
     organization: "University of Georgia - Center for Undergraduate Research Opportunities (CURO)",
     date: "Apr 2024",
     description:

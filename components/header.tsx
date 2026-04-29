@@ -29,7 +29,7 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="fixed top-0 left-0 w-full z-[99999] pointer-events-none">
+    <header className="fixed top-0 left-0 w-full z-[99999] isolate">
       <motion.div
         className="fixed top-0 left-1/2 z-[99998] h-auto w-full rounded-none glass-panel px-2 py-3 sm:top-6 sm:h-[3.25rem] sm:w-[min(90vw,44rem)] sm:rounded-full sm:px-0 sm:py-0 pointer-events-none"
         initial={{ y: -100, x: "-50%", opacity: 0 }}

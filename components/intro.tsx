@@ -34,7 +34,7 @@ export default function Intro() {
         >
           <p className="hero-eyebrow">Silicon systems + embedded intelligence</p>
           <motion.h1
-            className="hero-title font-display mt-4 text-3xl sm:text-4xl lg:text-5xl leading-tight"
+            className="hero-title font-display mt-4 text-2xl sm:text-3xl lg:text-4xl leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.1 }}
