@@ -1,7 +1,25 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/orbitron.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk.woff2") format("woff2");
+}
+
 :root {
   color-scheme: light;
+  --font-sans: "Space Grotesk";
+  --font-display: "Orbitron";
   --bg: #f7fbff;
   --bg-2: #eff4f9;
   --surface: rgba(255, 255, 255, 0.76);
