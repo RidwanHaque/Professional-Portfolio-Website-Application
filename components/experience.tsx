@@ -25,8 +25,8 @@ export default function Experience() {
               <Image
                 src={item.logo as string}
                 alt={`${item.company} logo`}
-                width={36}
-                height={36}
+                width={44}
+                height={44}
                 style={{ objectFit: "contain", borderRadius: 6 }}
               />
             </div>
