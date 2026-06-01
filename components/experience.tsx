@@ -19,11 +19,11 @@ export default function Experience() {
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="var(--line)">
         {experiencesData.map((item, index) => {
-          const hasLogo = Boolean((item as typeof experiencesData[number]).logo);
+          const hasLogo = Boolean(item.logo);
           const iconElement = hasLogo ? (
             <div className="flex items-center justify-center w-full h-full">
               <Image
-                src={(item as typeof experiencesData[number]).logo as string}
+                src={item.logo as string}
                 alt={`${item.company} logo`}
                 width={36}
                 height={36}

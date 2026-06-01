@@ -19,12 +19,16 @@ import vlsiProjectImg from "@/public/updated vlsi project.png";
 import epicLabImg from "@/public/Epic Lab.jpg";
 import onboardingProjectImg from "@/public/onboarding project.png";
 import demodayImg from "@/public/demoday.png";
-import livanovaLogo from "@/public/livanova_logo.jpg";
-import siliconJacketsLogo from "@/public/siliconjacketsgt_logo.jpg";
-import epicLabLogo from "@/public/epic_laboratory_logo.jpg";
-import georgiaTechOCLogo from "@/public/georgia_tech_office_of_commercialization_logo.jpg";
-import nitriamLogo from "@/public/nitriamdesignlogo.jpg";
-import ugaCuroLogo from "@/public/centerforundergradresearchugalogo.jpg";
+
+export type ExperienceEntry = {
+  title: string;
+  company: string;
+  location: string;
+  description: string;
+  icon: React.ReactNode;
+  logo?: string;
+  date: string;
+};
 
 
 export const links = [
@@ -58,7 +62,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiencesData: ExperienceEntry[] = [
   {
     title: "Systems Engineering Intern",
     company: "LivaNova · Internship",
@@ -66,7 +70,7 @@ export const experiencesData = [
     description:
       "Designing verified, traceable system architectures for implantable neuromodulation devices that treat epilepsy patients, using Model-Based Systems Engineering to translate clinical and functional requirements across electrical, software, and mechanical domains into reliable designs that directly support patient safety.\n\n- Developing and maintaining SysML system architecture models (Cameo/MagicDraw), capturing behavioral, structural, and parametric views to drive requirements traceability from specification through verification and test of implantable neuromodulation systems.\n- Interfacing with hardware, software, mechanical, and electrical engineering teams to resolve cross-domain integration conflicts and maintain interface consistency across safety-critical medical device subsystems.\n- Evaluating system-level cybersecurity, safety, and reliability constraints, modeling compliance requirements and risk controls essential to protecting patient safety in implantable medical device development.\n- Establishing bidirectional traceability between system-level requirements and design, implementation, and validation artifacts to support regulatory compliance for life-sustaining medical devices.",
     icon: React.createElement(CgWorkAlt),
-    logo: livanovaLogo,
+    logo: "/livanova_logo.jpg",
     date: "Jun 2026 - Present",
   },
   {
@@ -76,7 +80,7 @@ export const experiencesData = [
     description:
       "Contributing to the physical design team implementing a SkyWater 130 nm ASIC using Cadence tools (Genus, Innovus, Virtuoso), supporting synthesis-to-layout flows, block-level tapeout runs, and macro integration for DFFRAM and SRAM. Responsibilities include setup and use of the team sapr-based automation environment and gradual ownership of Innovus flow bring-up, block-level TO2 flow runs, and macro placement experiments.",
     icon: React.createElement(FaReact),
-    logo: siliconJacketsLogo,
+    logo: "/siliconjacketsgt_logo.jpg",
     date: "Feb 2026 - Present",
   },
   {
@@ -86,7 +90,7 @@ export const experiencesData = [
     description:
       "Designed a power/control PCB in EasyEDA to replace legacy perfboard hardware, integrating battery input, 24V-to-20V buck regulation for Nvidia Jetson, XT30 motor distribution, and MoCap interfaces to improve robustness. Integrated a CAN transceiver between Jetson Orin and four motor drivers, translating logic-level TX/RX to CANH/CANL for real-time ML-driven balance-assist commands. Implemented a remote E-stop protocol with Jetson-controlled MOSFET gating for software-driven motor cutoff and soldered 20 backup cables for redundancy. Optimized a multi-IMU processing stack in Python on Linux, reducing sensor count and data volume by 40% with about 5% deviation from hip-torque ground truth. Built a modular MATLAB analytics pipeline to benchmark four ML forecast models across 24 treadmill-perturbation conditions and 16 patient datasets.",
     icon: React.createElement(FaReact),
-    logo: epicLabLogo,
+    logo: "/epic_laboratory_logo.jpg",
     date: "Jan 2025 - Dec 2025",
   },
   {
@@ -96,7 +100,7 @@ export const experiencesData = [
     description:
       "Optimized Airtable databases by designing a custom GUI that enabled 12 employees to view tasks, track deadlines, and collaborate, boosting completion rates by 70%. Programmed 20 JavaScript automations for hiring workflows, application tracking, and applicant field aggregation to generate 15 departmental metrics. Deployed a centralized event database for four departments, enforced secure access controls, trained 10 employees on error handling, and configured AI-powered alerts, improving coordination efficiency by 80%. Coordinated 50+ database projects with 25+ stakeholders, accelerating legacy Airtable upgrades and cutting update turnaround by 30%.",
     icon: React.createElement(CgWorkAlt),
-    logo: georgiaTechOCLogo,
+    logo: "/georgia_tech_office_of_commercialization_logo.jpg",
     date: "Aug 2024 - Present",
   },
   {
@@ -106,7 +110,7 @@ export const experiencesData = [
     description:
       "Managing contract projects for the manufacturing startup, including client meetings to discuss project timelines and budgeting. Designed 10 vehicles and an RC Aircraft for 3D printing and rendering high-quality product visualizations for brands",
     icon: React.createElement(FaReact),
-    logo: nitriamLogo,
+    logo: "/nitriamdesignlogo.jpg",
     date: "June 2024 - Jan 2025",
   },
   {
@@ -116,7 +120,7 @@ export const experiencesData = [
     description:
       "Developed a physics-informed 3D Solar System simulation in Blender by integrating 10 NASA VTAD models and orbital datasets, then scripting 20 camera and body motion paths in Python for predictive eclipse visualization on Meta Quest VR. Built a Blender Python UI add-on with custom panels and scene properties for account info, time controls, and rendering parameters to streamline interaction. Organized a structured Git repository for 30+ Blender, Python, and asset files to support iterative development and reproducible builds. Secured a $1,000 CURO Research Grant and delivered a live technical demo of the pipeline at the 2024 CURO Research Symposium.",
     icon: React.createElement(LuGraduationCap),
-    logo: ugaCuroLogo,
+    logo: "/centerforundergradresearchugalogo.jpg",
     date: "Jan 2024 - May 2024",
   },
 ] as const;
