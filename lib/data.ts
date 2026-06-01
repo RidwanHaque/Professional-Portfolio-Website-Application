@@ -54,6 +54,15 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Systems Engineering Intern",
+    company: "LivaNova · Internship",
+    location: "Houston, Texas, United States · On-site",
+    description:
+      "Designing verified, traceable system architectures for implantable neuromodulation devices that treat epilepsy patients, using Model-Based Systems Engineering to translate clinical and functional requirements across electrical, software, and mechanical domains into reliable designs that directly support patient safety.\n\n- Developing and maintaining SysML system architecture models (Cameo/MagicDraw), capturing behavioral, structural, and parametric views to drive requirements traceability from specification through verification and test of implantable neuromodulation systems.\n- Interfacing with hardware, software, mechanical, and electrical engineering teams to resolve cross-domain integration conflicts and maintain interface consistency across safety-critical medical device subsystems.\n- Evaluating system-level cybersecurity, safety, and reliability constraints, modeling compliance requirements and risk controls essential to protecting patient safety in implantable medical device development.\n- Establishing bidirectional traceability between system-level requirements and design, implementation, and validation artifacts to support regulatory compliance for life-sustaining medical devices.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Jun 2026 - Present",
+  },
+  {
     title: "Physical Design Team Researcher",
     company: "SiliconJackets - Part-time",
     location: "Atlanta, Georgia, United States - Hybrid",
