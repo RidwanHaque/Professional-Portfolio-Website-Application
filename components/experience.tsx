@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -21,10 +22,12 @@ export default function Experience() {
           const hasLogo = Boolean((item as typeof experiencesData[number]).logo);
           const iconElement = hasLogo ? (
             <div className="flex items-center justify-center w-full h-full">
-              <img
-                src={(item as typeof experiencesData[number]).logo?.src ?? (item as typeof experiencesData[number]).logo}
+              <Image
+                src={(item as typeof experiencesData[number]).logo as string}
                 alt={`${item.company} logo`}
-                style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 6 }}
+                width={36}
+                height={36}
+                style={{ objectFit: "contain", borderRadius: 6 }}
               />
             </div>
           ) : (
