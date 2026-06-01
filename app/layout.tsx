@@ -1,21 +1,12 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Orbitron, Space_Grotesk } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
+// Using system fonts to avoid remote Google Fonts fetch during build
 
 export const metadata = {
   title: "Ridwan | Personal Portfolio",
@@ -29,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${spaceGrotesk.className} ${spaceGrotesk.variable} ${orbitron.variable} app-shell text-[color:var(--text)] relative pt-28 sm:pt-36`}
-      >
+      <body className={`app-shell text-[color:var(--text)] relative pt-28 sm:pt-36`}>
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
