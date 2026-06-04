@@ -19,6 +19,7 @@ import vlsiProjectImg from "@/public/updated vlsi project.png";
 import epicLabImg from "@/public/Epic Lab.jpg";
 import onboardingProjectImg from "@/public/onboarding project.png";
 import demodayImg from "@/public/demoday.png";
+import sharktankImg from "@/public/sharktank.jpg";
 
 export type ExperienceEntry = {
   title: string;
@@ -215,12 +216,12 @@ export const projectsData = [
 export const activitiesData = [
   {
     title: "Shark Tank — VIP Investor & Mentor",
-    organization: "Local Middle School",
+    organization: "Crews Middle School",
     date: "May 2026",
     description:
-      "Served as a returning student mentor and VIP Shark Investor judge for a middle school Shark Tank event. Coached student teams prior to presentations, evaluated four student business pitches using the provided scoring guide, conducted Q&A, provided constructive feedback, and selected final rankings.",
+      "Served as a returning student mentor and VIP Shark Investor judge for Crews Middle School's Shark Tank event (organized by my former teacher, Mr. Hames). Coached student teams prior to presentations, evaluated four student business pitches, conducted Q&A, provided constructive feedback, and selected final rankings.",
     tags: ["Mentoring", "Public Speaking", "Education", "Event"],
-    imageUrl: "/sharktank.JPG",
+    imageUrl: sharktankImg,
   },
   {
     title: "1st Place - Claude Builder Club Hackathon with NBC (Orbit - AI Nutrition Coach)",
