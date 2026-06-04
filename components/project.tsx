@@ -4,7 +4,7 @@
 import { projectsData } from "@/lib/data";
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 
@@ -18,27 +18,18 @@ export default function Project({
 }: ProjectProps) {
   const [expanded, setExpanded] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"]
-
-});
-const scaleProgress = useTransform(scrollYProgress, [0,1],[0.8,1]);
-const opacityProgress = useTransform(scrollYProgress, [0,1],[0.6,1]);
-
-
-// Show only first 120 chars if not expanded
-const preview = description.length > 120 && !expanded
-  ? description.slice(0, 120) + "..."
-  : description;
+  // Show only first 120 chars if not expanded
+  const preview = description.length > 120 && !expanded
+    ? description.slice(0, 120) + "..."
+    : description;
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale: scaleProgress,      // <-- use the transformed value
-        opacity: opacityProgress   // <-- use the transformed value
-      }}
+      initial={{ opacity: 0.6, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: false, amount: 0.35 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="chip-panel max-w-[75rem] rounded-2xl overflow-hidden p-5 sm:p-10 grid sm:grid-cols-[minmax(0,1.35fr)_minmax(0,0.85fr)] gap-6 sm:gap-8 items-start sm:justify-between transition hover:shadow-[0_0_50px_var(--glow)]">
