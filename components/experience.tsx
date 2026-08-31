@@ -21,9 +21,9 @@ export default function Experience() {
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
           const isIntelLogo = item.company.toLowerCase().includes("intel");
-          const logoSize = isIntelLogo ? 110 : 44;
+          const logoSize = isIntelLogo ? 160 : 44;
           const iconElement = hasLogo ? (
-            <div className={`flex items-center justify-center w-full h-full ${isIntelLogo ? "scale-125" : ""}`}>
+            <div className={`flex items-center justify-center w-full h-full ${isIntelLogo ? "scale-150" : ""}`}>
               <Image
                 src={item.logo as string}
                 alt={`${item.company} logo`}
@@ -43,8 +43,13 @@ export default function Experience() {
                 border: isIntelLogo ? "1px solid rgba(255,255,255,0.18)" : "1px solid var(--line)",
                 boxShadow: isIntelLogo ? "0 0 18px var(--glow)" : "0 0 8px var(--glow)",
                 fontSize: "1rem",
-                padding: isIntelLogo ? "10px" : "6px",
-                borderRadius: "10px",
+                padding: isIntelLogo ? "16px" : "6px",
+                borderRadius: "12px",
+                width: isIntelLogo ? 56 : undefined,
+                height: isIntelLogo ? 56 : undefined,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }
             : {
                 background: "var(--surface-2)",
