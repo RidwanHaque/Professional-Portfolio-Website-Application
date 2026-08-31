@@ -21,7 +21,7 @@ export default function Experience() {
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
           const isIntelLogo = item.company.toLowerCase().includes("intel");
-          const logoSize = 64;
+          const logoSize = isIntelLogo ? 52 : 32;
           const iconElement = hasLogo ? (
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[8px]">
               <Image
@@ -31,10 +31,10 @@ export default function Experience() {
                 height={logoSize}
                 style={{
                   objectFit: "contain",
-                  width: "100%",
-                  height: "100%",
+                  width: isIntelLogo ? "100%" : "auto",
+                  height: isIntelLogo ? "100%" : "auto",
                   display: "block",
-                  padding: isIntelLogo ? 0 : 6,
+                  padding: isIntelLogo ? 0 : 4,
                   borderRadius: 0,
                   background: "transparent",
                 }}
@@ -45,21 +45,31 @@ export default function Experience() {
           );
 
           const iconStyle = hasLogo
-            ? {
-                background: "transparent",
-                color: "var(--accent)",
-                border: "1px solid var(--line)",
-                boxShadow: "0 0 8px var(--glow)",
-                fontSize: "1rem",
-                padding: isIntelLogo ? 0 : "8px",
-                borderRadius: "8px",
-                width: isIntelLogo ? 56 : 52,
-                height: isIntelLogo ? 56 : 52,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
-              }
+            ? isIntelLogo
+              ? {
+                  background: "transparent",
+                  color: "var(--accent)",
+                  border: "1px solid var(--line)",
+                  boxShadow: "0 0 8px var(--glow)",
+                  fontSize: "1rem",
+                  padding: 0,
+                  borderRadius: "8px",
+                  width: 56,
+                  height: 56,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  overflow: "hidden",
+                }
+              : {
+                  background: "transparent",
+                  color: "var(--accent)",
+                  border: "1px solid var(--line)",
+                  boxShadow: "0 0 8px var(--glow)",
+                  fontSize: "1rem",
+                  padding: "6px",
+                  borderRadius: "8px",
+                }
             : {
                 background: "var(--surface-2)",
                 color: "var(--accent)",
