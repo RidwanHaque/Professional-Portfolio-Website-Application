@@ -20,7 +20,6 @@ export default function Experience() {
       <VerticalTimeline lineColor="var(--line)">
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
-          const isIntelLogo = item.company.toLowerCase().includes("intel");
           const logoSize = 64;
           const iconElement = hasLogo ? (
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[8px]">
