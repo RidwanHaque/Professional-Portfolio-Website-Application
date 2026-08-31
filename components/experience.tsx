@@ -22,7 +22,7 @@ export default function Experience() {
           const hasLogo = Boolean(item.logo);
           const companyName = item.company.toLowerCase();
           const isIntelLogo = companyName.includes("intel");
-          const logoSize = isIntelLogo ? 62 : 42;
+          const logoSize = isIntelLogo ? 70 : 42;
           const iconElement = hasLogo ? (
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[8px]">
               <Image
@@ -55,8 +55,8 @@ export default function Experience() {
                   fontSize: "1rem",
                   padding: 0,
                   borderRadius: "8px",
-                  width: 62,
-                  height: 62,
+                  width: 70,
+                  height: 70,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
