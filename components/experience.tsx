@@ -21,7 +21,7 @@ export default function Experience() {
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
           const isIntelLogo = item.company.toLowerCase().includes("intel");
-          const logoSize = 38;
+          const logoSize = 48;
           const iconElement = hasLogo ? (
             <div className="flex h-full w-full items-center justify-center">
               <Image
@@ -33,7 +33,7 @@ export default function Experience() {
                   objectFit: "contain",
                   width: "100%",
                   height: "100%",
-                  padding: isIntelLogo ? 2 : 4,
+                  padding: isIntelLogo ? 2 : 6,
                   borderRadius: 6,
                 }}
               />
@@ -49,10 +49,10 @@ export default function Experience() {
                 border: "1px solid var(--line)",
                 boxShadow: "0 0 8px var(--glow)",
                 fontSize: "1rem",
-                padding: isIntelLogo ? 0 : "6px",
+                padding: isIntelLogo ? 0 : "8px",
                 borderRadius: "8px",
-                width: 40,
-                height: 40,
+                width: 52,
+                height: 52,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
