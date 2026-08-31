@@ -18,7 +18,7 @@ export default function Home() {
     <Intro />
     <SectionDivider />
     <About />
-
+    <Experience />
     <Projects />
     {showApiDemos && (
       <>
@@ -27,11 +27,8 @@ export default function Home() {
       </>
     )}
     <Skills />
-    <Experience />
     <Activities />
     <Contact />
-    
-
   </main>
 
 }
