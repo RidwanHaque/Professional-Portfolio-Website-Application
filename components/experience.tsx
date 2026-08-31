@@ -20,8 +20,17 @@ export default function Experience() {
       <VerticalTimeline lineColor="var(--line)">
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
-          const isIntelLogo = item.company.toLowerCase().includes("intel");
-          const logoSize = isIntelLogo ? 62 : 42;
+          const companyName = item.company.toLowerCase();
+          const shouldEnlargeLogo = [
+            "intel",
+            "liva",
+            "silicon",
+            "nitriam",
+            "georgia tech",
+            "blue origin",
+            "astronomy",
+          ].some((keyword) => companyName.includes(keyword));
+          const logoSize = shouldEnlargeLogo ? 58 : 42;
           const iconElement = hasLogo ? (
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[8px]">
               <Image
@@ -34,7 +43,7 @@ export default function Experience() {
                   width: "100%",
                   height: "100%",
                   display: "block",
-                  padding: isIntelLogo ? 0 : 4,
+                  padding: shouldEnlargeLogo ? 0 : 4,
                   borderRadius: 0,
                   background: "transparent",
                 }}
@@ -45,37 +54,21 @@ export default function Experience() {
           );
 
           const iconStyle = hasLogo
-            ? isIntelLogo
-              ? {
-                  background: "transparent",
-                  color: "var(--accent)",
-                  border: "1px solid var(--line)",
-                  boxShadow: "0 0 8px var(--glow)",
-                  fontSize: "1rem",
-                  padding: 0,
-                  borderRadius: "8px",
-                  width: 62,
-                  height: 62,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  overflow: "hidden",
-                }
-              : {
-                  background: "transparent",
-                  color: "var(--accent)",
-                  border: "1px solid var(--line)",
-                  boxShadow: "0 0 8px var(--glow)",
-                  fontSize: "1rem",
-                  padding: "6px",
-                  borderRadius: "8px",
-                  width: 48,
-                  height: 48,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  overflow: "hidden",
-                }
+            ? {
+                background: "transparent",
+                color: "var(--accent)",
+                border: "1px solid var(--line)",
+                boxShadow: "0 0 8px var(--glow)",
+                fontSize: "1rem",
+                padding: shouldEnlargeLogo ? 0 : "6px",
+                borderRadius: "8px",
+                width: shouldEnlargeLogo ? 58 : 48,
+                height: shouldEnlargeLogo ? 58 : 48,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
+              }
             : {
                 background: "var(--surface-2)",
                 color: "var(--accent)",
