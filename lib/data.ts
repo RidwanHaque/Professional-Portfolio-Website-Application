@@ -65,21 +65,41 @@ export const links = [
 
 export const experiencesData: ExperienceEntry[] = [
   {
+    title: "Avionics Software Engineering Intern",
+    company: "Blue Origin · Internship",
+    location: "United States · On-site",
+    description:
+      "Supporting Blue Origin's avionics and flight software teams by contributing to the design, development, and verification of embedded software used across launch vehicle and ground systems.\n\n- Develop and test software in C, C++, and Python for avionics and embedded applications tied to launch vehicle and test-stand systems.\n- Collaborate with multidisciplinary engineering teams to implement and validate safety-critical, real-time software in a fast-paced development environment.\n- Participate in the software lifecycle through requirements analysis, implementation, testing, documentation, and integration support.\n- Help improve build, debugging, and test workflows to support reliable software delivery and system verification.",
+    icon: React.createElement(CgWorkAlt),
+    logo: "/blue origin.png",
+    date: "Summer 2027",
+  },
+  {
+    title: "Module Engineering Intern",
+    company: "Intel Corporation · Internship",
+    location: "Hillsboro, Oregon, United States · On-site",
+    description:
+      "Supporting the Planar Chemical Delivery team in semiconductor module manufacturing by helping sustain and improve the processes and equipment that enable high-volume wafer production.\n\n- Troubleshoot and investigate equipment behavior, process drift, and tool performance issues to support stable manufacturing operations.\n- Partner with engineering teams to analyze process data, identify root causes, and improve control strategies for chemical delivery and module-level process reliability.\n- Support equipment maintenance and qualification activities to help maintain uptime, product quality, and production throughput.\n- Contribute to process documentation, data review, and continuous improvement work aimed at reducing variation and improving manufacturing efficiency.",
+    icon: React.createElement(CgWorkAlt),
+    logo: "/Intel-Logo.png",
+    date: "Sep 2026 - Present",
+  },
+  {
     title: "Systems Engineering Intern",
     company: "LivaNova · Internship",
     location: "Houston, Texas, United States · On-site",
     description:
-      "Designing verified, traceable system architectures for implantable neuromodulation devices that treat epilepsy patients, using Model-Based Systems Engineering to translate clinical and functional requirements across electrical, software, and mechanical domains into reliable designs that directly support patient safety.\n\n- Developing and maintaining SysML system architecture models (Cameo/MagicDraw), capturing behavioral, structural, and parametric views to drive requirements traceability from specification through verification and test of implantable neuromodulation systems.\n- Interfacing with hardware, software, mechanical, and electrical engineering teams to resolve cross-domain integration conflicts and maintain interface consistency across safety-critical medical device subsystems.\n- Evaluating system-level cybersecurity, safety, and reliability constraints, modeling compliance requirements and risk controls essential to protecting patient safety in implantable medical device development.\n- Establishing bidirectional traceability between system-level requirements and design, implementation, and validation artifacts to support regulatory compliance for life-sustaining medical devices.",
+      "Designing and maintaining system architecture models for health platform and biometric hardware, connecting clinician tools, patient applications, and backend services into an integrated medical ecosystem while improving traceability from 100+ stakeholder-defined requirements to verification planning.\n\n- Modeled clinical application data flows and decomposed internal architecture, interfaces, and data relationships in CATIA Magic using SysML v2/UML by analyzing 70+ YAML and Python files in a GitHub-hosted microservices codebase.\n- Validated Git-based embedded firmware bring-up and debugged PCBA hardware/software issues using Embedded C, Python, IAR Embedded Workbench, JTAG probes, USB serial interfaces, clinical software, Keysight instrumentation, oscilloscopes, and bench power supplies.\n- Traced processor datasheets, electrical schematics, and memory maps to document hardware/software interfaces and support system integration and debugging.\n- Integrated AI-assisted workflows into MBSE tasks to improve verification efficiency while applying FDA design controls and CAPA-driven quality practices to align architecture, safety, cybersecurity, and patient data handling with regulatory requirements.\n- Developed synchronization workflows across Confluence, GitLab CI/CD, and Polarion to automate model updates and collaborate cross-functionally with software and electrical R&D teams using Lucid (C4) and Jira to align requirements with system design.",
     icon: React.createElement(CgWorkAlt),
     logo: "/livanova_logo.jpg",
     date: "Jun 2026 - Present",
   },
   {
-    title: "Physical Design Team Researcher",
+    title: "ASIC Physical Design Researcher",
     company: "SiliconJackets - Part-time",
     location: "Atlanta, Georgia, United States - Hybrid",
     description:
-      "Contributing to the physical design team implementing a SkyWater 130 nm ASIC using Cadence tools (Genus, Innovus, Virtuoso), supporting synthesis-to-layout flows, block-level tapeout runs, and macro integration for DFFRAM and SRAM. Responsibilities include setup and use of the team sapr-based automation environment and gradual ownership of Innovus flow bring-up, block-level TO2 flow runs, and macro placement experiments.",
+      "Executed automated RTL-to-GDSII chip place-and-route flows on open-source Tapeout RTL pipeline blocks in Cadence Innovus on Linux servers, collecting post-route timing and area metrics including Worst Negative Slack (WNS) for the team’s block-level characterization effort.\n\n- Completed chip layout for the execute stage in the SkyWater 130 nm PDK flow with zero design-rule violations, passing timing, and identified an unresolved dependency blocking final sign-off, escalating the issue to the Digital Design and Verification teams.\n- Diagnosed flow failures across four combinational blocks (ALU, hazard unit, control unit, and forward unit), tracing the root cause to a mismatch between the flow’s timing assumptions and clockless logic, and documented findings in GitHub Issues.\n- Resolved the ALU flow failure by modifying the SystemVerilog RTL in VS Code to add sequential logic wrappers, enabling timing analysis to complete and unlocking critical performance metrics for tapeout planning.",
     icon: React.createElement(FaReact),
     logo: "/siliconjacketsgt_logo.jpg",
     date: "Feb 2026 - Present",
@@ -89,7 +109,7 @@ export const experiencesData: ExperienceEntry[] = [
     company: "Exoskeleton and Prosthetic Intelligent Controls (EPIC) Lab",
     location: "Atlanta, GA",
     description:
-      "Designed a power/control PCB in EasyEDA to replace legacy perfboard hardware, integrating battery input, 24V-to-20V buck regulation for Nvidia Jetson, XT30 motor distribution, and MoCap interfaces to improve robustness. Integrated a CAN transceiver between Jetson Orin and four motor drivers, translating logic-level TX/RX to CANH/CANL for real-time ML-driven balance-assist commands. Implemented a remote E-stop protocol with Jetson-controlled MOSFET gating for software-driven motor cutoff and soldered 20 backup cables for redundancy. Optimized a multi-IMU processing stack in Python on Linux, reducing sensor count and data volume by 40% with about 5% deviation from hip-torque ground truth. Built a modular MATLAB analytics pipeline to benchmark four ML forecast models across 24 treadmill-perturbation conditions and 16 patient datasets.",
+      "• Designed a power/control PCB in EasyEDA to upgrade legacy perfboard assembly, integrated battery input, 24V-to-20V buck regulation for the Nvidia Jetson controller, XT30 motor power distribution, and MoCap interfaces, improving robustness of the robotic hip exoskeleton electrical hardware.\n• Integrated a CAN transceiver between the Jetson Orin controller and four motor drivers, converting logic-level TX/RX signals to 2-wire CANH/CANL bus communication, enabling real-time, ML-driven balance-assist commands for the biomedical hip exoskeleton suit over the CAN network.\n• Reworked the system with a remote E-stop protocol by prototyping Jetson-controlled MOSFET gating for software-driven motor power cutoff and soldered 20 backup cables to ensure system redundancy and reliability.\n• Optimized a multi-IMU data-processing stack in Python on Linux, reducing sensor count and data volume by 40% with only 5% deviation from hip-torque ground truth, enabling faster model training and lower real-time streaming bandwidth.\n• Engineered a modular MATLAB analytics pipeline to benchmark four ML forecast models across 24 treadmill-perturbation conditions and 16 hip-exoskeleton patient datasets, computing subject-level R²/RMSE and generating data visualizations for model selection.",
     icon: React.createElement(FaReact),
     logo: "/epic_laboratory_logo.jpg",
     date: "Jan 2025 - Dec 2025",
@@ -99,7 +119,7 @@ export const experiencesData: ExperienceEntry[] = [
     company: "Georgia Tech Office of Commercialization",
     location: "Atlanta, GA",
     description:
-      "Optimized Airtable databases by designing a custom GUI that enabled 12 employees to view tasks, track deadlines, and collaborate, boosting completion rates by 70%. Programmed 20 JavaScript automations for hiring workflows, application tracking, and applicant field aggregation to generate 15 departmental metrics. Deployed a centralized event database for four departments, enforced secure access controls, trained 10 employees on error handling, and configured AI-powered alerts, improving coordination efficiency by 80%. Coordinated 50+ database projects with 25+ stakeholders, accelerating legacy Airtable upgrades and cutting update turnaround by 30%.",
+      "• Optimized Airtable-based hiring workflows by designing custom GUIs and programming 20 JavaScript automations, streamlining application tracking and record organization while aggregating applicant data into 15 metrics for leadership visibility, analysis, and process efficiency.\n• Deployed a centralized event database for four departments, enforced secure access controls, trained 10 employees on error-handling workflows, and configured AI-powered alerts, improving coordination efficiency by 80%.\n• Coordinated 50+ database projects by leading recurring check-ins and clarifying requirements with 25+ technical and non-technical collaborators, accelerating turnaround of minimal viable products while supporting entrepreneurship program operations.\n• Conducted research on 100+ investors and venture firms, organizing historical engagement data into a structured database and categorizing firms by sector interest and seed-stage focus to support startup outreach and program planning.\n• Provided on-site support for innovation and entrepreneurship events by answering questions from students and guests, assisting with logistics, and connecting prospective participants with relevant programs.",
     icon: React.createElement(CgWorkAlt),
     logo: "/georgia_tech_office_of_commercialization_logo.jpg",
     date: "Aug 2024 - Present",
@@ -119,7 +139,7 @@ export const experiencesData: ExperienceEntry[] = [
     company: "University of Georgia Department of Physics & Astronomy",
     location: "Athens, GA",
     description:
-      "Developed a physics-informed 3D Solar System simulation in Blender by integrating 10 NASA VTAD models and orbital datasets, then scripting 20 camera and body motion paths in Python for predictive eclipse visualization on Meta Quest VR. Built a Blender Python UI add-on with custom panels and scene properties for account info, time controls, and rendering parameters to streamline interaction. Organized a structured Git repository for 30+ Blender, Python, and asset files to support iterative development and reproducible builds. Secured a $1,000 CURO Research Grant and delivered a live technical demo of the pipeline at the 2024 CURO Research Symposium.",
+      "• Developed a physics-informed 3D Solar System simulation in Blender, integrating 10 NASA VTAD models and orbital datasets and scripting 20 camera and body motion paths in Python to generate predictive eclipse visualizations for Meta Quest VR deployment.\n• Programmed a Blender Python UI add-on with custom panels and scene properties for account information, time controls, and rendering/travel parameters to streamline user interaction and provide finer control over the simulation.\n• Organized a structured Git repository for 30+ Blender, Python, and asset files, managing branches and commits to support iterative feature development, asset updates, and reproducible builds for collaborators.\n• Secured a $1,000 CURO Research Grant and delivered a live technical demonstration of the end-to-end visualization pipeline at the 2024 CURO Research Symposium, from raw NASA data to interactive eclipse experiences.",
     icon: React.createElement(LuGraduationCap),
     logo: "/centerforundergradresearchugalogo.jpg",
     date: "Jan 2024 - May 2024",
