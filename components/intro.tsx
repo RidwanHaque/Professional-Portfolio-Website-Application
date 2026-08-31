@@ -42,21 +42,19 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", duration: 0.6, delay: 0.1 }}
           >
-            Hello, I&apos;m Ridwan. I design chip-aware systems, real-time
-            software, and experimental platforms that fuse hardware with AI.
+            I am Ridwan.
           </motion.h1>
           <p className="mt-4 text-base sm:text-lg text-[color:var(--muted)]">
-            Computer Engineering student at Georgia Tech with 4 years of
-            experience spanning chip design, embedded systems, distributed
-            software, and data-driven tooling.
+            Computer Engineering major with a Materials Science Engineering
+            minor at Georgia Tech, building systems at the intersection of chip
+            design, embedded hardware, and real-world impact.
           </p>
 
           <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-2 text-xs sm:text-sm">
             {[
-              "Physical design",
-              "Embedded systems",
-              "Distributed software",
-              "AI pipelines",
+              "Medical devices & biomedical systems",
+              "Semiconductors & computer chips",
+              "Aerospace & space exploration",
             ].map((label) => (
               <span key={label} className="chip-pill rounded-full px-3 py-1">
                 {label}
@@ -140,8 +138,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "tween", duration: 0.5, delay: 0.35 }}
       >
-        Currently building new projects and open to research and internship
-        opportunities. Reach out anytime.
+        Looking for full-time roles in technology that improves lives and expands the frontier of human capability.
       </motion.p>
 
       <motion.div
