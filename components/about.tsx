@@ -31,27 +31,18 @@ export default function About() {
       {/*Every section needs to get added to the page file we can use Section Heading for each section as a shortcut*/} 
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        My passion for technology has led me to build projects across{" "}
-        <span className="font-medium">embedded systems, hardware-software co-design, automation, and web development</span>. 
-        My current research in <span className="font-medium">Robotic Human Augmentation at Georgia Tech</span> has deepened my understanding of biomedical innovation and the importance of universal healthcare coverage, while my experience in <span className="font-medium">UGA&apos;s CURO Research Program</span> allowed me to explore astrophysics and computational research under the guidance of Dr. Nandana Weliweriya and Professor Inseok Song. I was awarded a $1000 CURO Research Reward and had the opportunity to present at the Spring 2024 CURO Research Symposium.
+        I&apos;m an electrical and computer engineering student passionate about <span className="font-medium">embedded systems, hardware-software co-design, semiconductor technology, automation, and secure computing</span>. Through engineering projects and internships, I&apos;ve developed experience with <span className="font-medium">firmware, hardware integration, systems engineering, and software development</span>.
       </p>
       <p className="mb-8">
-        Outside of engineering, I enjoy <span className="font-medium">digital music production in FL Studio</span> and{" "}
-        <span className="font-medium">optimizing 3D rendering workflows in Blender</span>.
+        Outside of engineering, I enjoy <span className="font-medium">hiking, traveling, trying new activities, producing digital music, and exploring 3D design workflows</span>. I value meeting new people, building meaningful connections, and forming lifelong friendships.
       </p>
 
       <h3 className="text-xl font-semibold mb-2 font-display text-[color:var(--text)]">Career Goals</h3>
       <p className="mb-3">
-        I am especially interested in <span className="font-medium">aerospace engineering</span> and <span className="font-medium">national security initiatives</span>.
-      </p>
-      <p className="mb-3">
-        I am currently seeking an <span className="font-medium">internship or co-op</span> as a <span className="font-medium">Cloud Computing and Infrastructure Security Engineer, Embedded Systems and Computing Hardware Engineer, or Software Engineer</span>.
-      </p>
-      <p className="mb-3">
-        My interest in aerospace inspired me to build an <span className="font-medium">API for an air traffic control system interfaced with an FPGA on a DE10 development board</span>. I am currently building a <span className="font-medium">cybersecurity homelab</span> to deepen my knowledge of network security.
+        I&apos;m pursuing opportunities in <span className="font-medium">embedded systems, semiconductor manufacturing, systems engineering, aerospace, cybersecurity, and software development</span>. I&apos;m especially interested in building reliable, secure, and practical technology that connects hardware and software.
       </p>
       <p>
-        My ambition is to deepen my expertise in <span className="font-medium">chip design, GPU architecture, integrating AI and ML into my workflows, and building secure cyber-physical and embedded systems</span>.
+        My long-term goal is to deepen my expertise in <span className="font-medium">embedded and cyber-physical systems, chip and GPU architecture, and AI-enabled engineering workflows</span> while contributing to impactful technical projects.
       </p>
     </motion.section>
   )
