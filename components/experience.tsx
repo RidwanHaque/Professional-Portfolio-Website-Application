@@ -21,9 +21,9 @@ export default function Experience() {
         {experiencesData.map((item, index) => {
           const hasLogo = Boolean(item.logo);
           const isIntelLogo = item.company.toLowerCase().includes("intel");
-          const logoSize = isIntelLogo ? 72 : 44;
+          const logoSize = 38;
           const iconElement = hasLogo ? (
-            <div className={`flex h-full w-full items-center justify-center ${isIntelLogo ? "p-1" : ""}`}>
+            <div className="flex h-full w-full items-center justify-center">
               <Image
                 src={item.logo as string}
                 alt={`${item.company} logo`}
@@ -31,8 +31,9 @@ export default function Experience() {
                 height={logoSize}
                 style={{
                   objectFit: "contain",
-                  width: isIntelLogo ? "100%" : "auto",
-                  height: isIntelLogo ? "100%" : "auto",
+                  width: "100%",
+                  height: "100%",
+                  padding: isIntelLogo ? 2 : 4,
                   borderRadius: 6,
                 }}
               />
@@ -42,30 +43,20 @@ export default function Experience() {
           );
 
           const iconStyle = hasLogo
-            ? isIntelLogo
-              ? {
-                  background: "rgba(255,255,255,0.04)",
-                  color: "var(--accent)",
-                  border: "1px solid rgba(255,255,255,0.18)",
-                  boxShadow: "0 0 18px var(--glow)",
-                  fontSize: "1rem",
-                  padding: 0,
-                  borderRadius: "12px",
-                  width: 72,
-                  height: 72,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }
-              : {
-                  background: "transparent",
-                  color: "var(--accent)",
-                  border: "1px solid var(--line)",
-                  boxShadow: "0 0 8px var(--glow)",
-                  fontSize: "1rem",
-                  padding: "6px",
-                  borderRadius: "8px",
-                }
+            ? {
+                background: "transparent",
+                color: "var(--accent)",
+                border: "1px solid var(--line)",
+                boxShadow: "0 0 8px var(--glow)",
+                fontSize: "1rem",
+                padding: isIntelLogo ? 0 : "6px",
+                borderRadius: "8px",
+                width: 40,
+                height: 40,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }
             : {
                 background: "var(--surface-2)",
                 color: "var(--accent)",
