@@ -122,7 +122,7 @@ export default function Intro() {
           <div className="hero-chip hero-chip--b"></div>
           <div className="relative z-10 rounded-[2.5rem] border border-[color:var(--line)] bg-[color:var(--surface)] p-4 glow-ring">
             <Image
-              src="/Ridwan%20V2.png"
+              src="/newmephoto.png"
               alt="Ridwan Portrait"
               width={520}
               height={640}
