@@ -69,17 +69,17 @@ export const experiencesData: ExperienceEntry[] = [
     company: "Blue Origin · Internship",
     location: "United States · On-site",
     description:
-      "Supporting Blue Origin's avionics and flight software teams by contributing to the design, development, and verification of embedded software used across launch vehicle and ground systems.\n\n- Develop and test software in C, C++, and Python for avionics and embedded applications tied to launch vehicle and test-stand systems.\n- Collaborate with multidisciplinary engineering teams to implement and validate safety-critical, real-time software in a fast-paced development environment.\n- Participate in the software lifecycle through requirements analysis, implementation, testing, documentation, and integration support.\n- Help improve build, debugging, and test workflows to support reliable software delivery and system verification.",
+      "Joining Blue Origin’s Avionics Software team to support the design, development, testing, and verification of embedded software and systems for launch vehicles, ground systems, test stands, and lunar programs. Expected work includes contributing C, C++, and Python software across the full development lifecycle—from requirements and implementation through verification, documentation, integration, and debugging—while collaborating with multidisciplinary teams to help deliver reliable, safety-critical real-time systems. The internship also involves improving build, test, automation, and deployment workflows that support high-quality aerospace software delivery.",
     icon: React.createElement(CgWorkAlt),
-    logo: "/blue origin.png",
+    logo: "/blueoriginv2.png",
     date: "Summer 2027",
   },
   {
-    title: "Module Engineering Intern",
+    title: "PCD Module Engineering Intern",
     company: "Intel Corporation · Internship",
     location: "Hillsboro, Oregon, United States · On-site",
     description:
-      "Supporting the Planar Chemical Delivery team in semiconductor module manufacturing by helping sustain and improve the processes and equipment that enable high-volume wafer production.\n\n- Troubleshoot and investigate equipment behavior, process drift, and tool performance issues to support stable manufacturing operations.\n- Partner with engineering teams to analyze process data, identify root causes, and improve control strategies for chemical delivery and module-level process reliability.\n- Support equipment maintenance and qualification activities to help maintain uptime, product quality, and production throughput.\n- Contribute to process documentation, data review, and continuous improvement work aimed at reducing variation and improving manufacturing efficiency.",
+      "Supporting the Planar Chemical Delivery team in semiconductor module manufacturing by helping sustain and improve the processes and equipment that enable high-volume wafer production. Troubleshooting and investigating equipment behavior, process drift, and tool-performance issues to support stable manufacturing operations. Partnering with engineering teams to analyze process data, identify root causes, and improve control strategies for chemical delivery and module-level process reliability. Supporting equipment maintenance and qualification activities to help maintain uptime, product quality, and production throughput. Contributing to process documentation, data review, and continuous-improvement work aimed at reducing variation and improving manufacturing efficiency.",
     icon: React.createElement(CgWorkAlt),
     logo: "/intelv2.png",
     date: "Sep 2026 - Present",
