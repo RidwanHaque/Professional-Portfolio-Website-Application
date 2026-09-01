@@ -67,12 +67,12 @@ export const experiencesData: ExperienceEntry[] = [
   {
     title: "Avionics Software Engineering Intern",
     company: "Blue Origin · Internship",
-    location: "United States · On-site",
+    location: "Kent, Washington,United States · On-site",
     description:
       "Joining Blue Origin’s New Glenn Ground Software team to support the development, testing, and verification of high-reliability software that interfaces with New Glenn avionics from factory production testing through pad operations and liftoff. Contributing Python and C/C++ software for Linux and bare-metal embedded systems supporting mission-critical pre-launch activities, including propellant loading, cryogenic chill-in, and water-deluge operations. Collaborating across the software lifecycle—from requirements and implementation through debugging, verification, documentation, integration, and automation—to help enable safe, reliable launch operations at scale.",
     icon: React.createElement(CgWorkAlt),
     logo: "/bov3.png",
-    date: "Summer 2027",
+    date: "May 2027 - August 2027",
   },
   {
     title: "PCD Module Engineering Intern",
@@ -82,7 +82,7 @@ export const experiencesData: ExperienceEntry[] = [
       "Supporting the Planar Chemical Delivery team in semiconductor module manufacturing by helping sustain and improve the processes and equipment that enable high-volume wafer production. Troubleshooting and investigating equipment behavior, process drift, and tool-performance issues to support stable manufacturing operations. Partnering with engineering teams to analyze process data, identify root causes, and improve control strategies for chemical delivery and module-level process reliability. Supporting equipment maintenance and qualification activities to help maintain uptime, product quality, and production throughput. Contributing to process documentation, data review, and continuous-improvement work aimed at reducing variation and improving manufacturing efficiency.",
     icon: React.createElement(CgWorkAlt),
     logo: "/intelv2.png",
-    date: "Sep 2026 - Present",
+    date: "Aug 2026 - Nov 2026",
   },
   {
     title: "Systems Engineering Intern",
