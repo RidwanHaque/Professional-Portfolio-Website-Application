@@ -81,7 +81,7 @@ export const experiencesData: ExperienceEntry[] = [
     description:
       "Supporting the Planar Chemical Delivery team in semiconductor module manufacturing by helping sustain and improve the processes and equipment that enable high-volume wafer production.\n\n- Troubleshoot and investigate equipment behavior, process drift, and tool performance issues to support stable manufacturing operations.\n- Partner with engineering teams to analyze process data, identify root causes, and improve control strategies for chemical delivery and module-level process reliability.\n- Support equipment maintenance and qualification activities to help maintain uptime, product quality, and production throughput.\n- Contribute to process documentation, data review, and continuous improvement work aimed at reducing variation and improving manufacturing efficiency.",
     icon: React.createElement(CgWorkAlt),
-    logo: "/Intel-Logo.png",
+    logo: "/intelv2.png",
     date: "Sep 2026 - Present",
   },
   {
