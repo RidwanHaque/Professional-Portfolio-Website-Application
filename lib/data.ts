@@ -67,7 +67,7 @@ export const experiencesData: ExperienceEntry[] = [
   {
     title: "Avionics Software Engineering Intern",
     company: "Blue Origin · Internship",
-    location: "Kent, Washington,United States · On-site",
+    location: "Kent, Washington, United States · On-site",
     description:
       "Joining Blue Origin’s New Glenn Ground Software team to support the development, testing, and verification of high-reliability software that interfaces with New Glenn avionics from factory production testing through pad operations and liftoff. Contributing Python and C/C++ software for Linux and bare-metal embedded systems supporting mission-critical pre-launch activities, including propellant loading, cryogenic chill-in, and water-deluge operations. Collaborating across the software lifecycle—from requirements and implementation through debugging, verification, documentation, integration, and automation—to help enable safe, reliable launch operations at scale.",
     icon: React.createElement(CgWorkAlt),
